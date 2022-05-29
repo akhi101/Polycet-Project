@@ -1,0 +1,944 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Polycet | Responsive Home Page</title>
+    <link rel="icon" href="assets/img/custom/favicon.png" type="image/x-icon">
+    <!-- ========== Start Stylesheet ========== -->
+    <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.min.js"></script>-->
+    <!--<script src="../../../assets/js/jquery-3.3.1.js"></script>
+    <link href="../../../assets/jquery.lightbox.css" rel="stylesheet" />-->
+    <!--lightbox popup css-->
+    <!--<link href="assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="assets/css/flaticon-set.css" rel="stylesheet" />
+    <link href="assets/css/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/css/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/css/animate.css" rel="stylesheet" />-->
+    <link href="assets/css/style.css" rel="stylesheet" />
+    <link href="assets/site-fonts/stylesheet.css" rel="stylesheet" />
+    <link href="assets/css/responsive.css" rel="stylesheet" />
+
+    <link href="assets/css/nav.css" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"> -->
+    <script src="scripts/require.js" data-main="app/main"></script>
+
+    <style>
+        .test-scroll a {
+            font-weight: 600;
+            color: #ff6600;
+            text-decoration: none;
+            font-size: 14px;
+            margin-right: 20px;
+        }
+
+        body {
+            font-family: 'Muli', sans-serif !important;
+        }
+
+        .scroll-top-wrapper {
+            color: #03173d;
+            background-color: #fff !important;
+            background-image: linear-gradient(to right, #fff 0%, #fff 100%) !important;
+        }
+    </style>
+    <style type="text/css">
+        body {
+            font-family: Arial;
+            /*font-size: 16px;*/
+        }
+
+        .font-button {
+            background-color: #0090CB;
+            height: 50px;
+            width: 50px;
+            display: inline-block;
+            color: #fff;
+            text-align: center;
+            line-height: 50px;
+            font-size: 25px;
+            cursor: pointer;
+        }
+
+        select.form-control {
+            min-height: 34px !important;
+        }
+
+        #page {
+            display: none;
+        }
+
+        #loading {
+            display: block;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 100;
+            width: 100vw;
+            height: 100vh;
+            background-color: #f5f5f5;
+            /*background-image: url("https://i.pinimg.com/originals/c8/a1/76/c8a1765ffc8243f3a7b176c0ca84c3c1.gif");*/
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .loadImg {
+            height: 380px;
+            width: 570px;
+            position: relative;
+            top: 100px;
+        }
+
+        #mainfooter {
+            margin-top: 50px;
+        }
+
+        .w-30 {
+            width: 29%;
+        }
+
+        .SecretaryCss {
+            /* float: right; */
+            color: #094088 !important;
+            /*text-decoration: uppercase;*/
+            line-height: 20px;
+            margin-bottom: 0px;
+            font-size: 10px;
+            font-weight: 800;
+            padding-right: 33px;
+            /*text-align: center!important;*/
+        }
+
+        .table > thead > tr > th {
+            cursor: pointer !important;
+        }
+        /*.navigation-landscape .list-col-3 {
+            width: 25%;
+        }*/
+        div {
+            font-size: 12px;
+        }
+
+            div #ui-datepicker-div {
+                display: none !important;
+            }
+
+        @media only screen and (max-width: 480px) {
+            .banner {
+                height: auto !important;
+            }
+        }
+
+        .cent_head {
+            font-size: 30px;
+            font-weight: bold;
+            color: #275995;
+        }
+
+        .txt_size {
+            font-size: 17px;
+        }
+
+        .conn-lay p {
+            color: #0f0202;
+            background-color: #35a5f1;
+            padding: 0;
+            height: 0;
+            text-align: justify;
+            width: 100%;
+            margin-bottom: 27px;
+            transition: all .5s linear;
+        }
+
+        .cardItems .item h4 {
+            font-weight: 800;
+            margin-bottom: 10px;
+            font-size: 15px;
+            transition: all 0.35s ease-in-out;
+            -webkit-transition: all 0.35s ease-in-out;
+            -moz-transition: all 0.35s ease-in-out;
+            -ms-transition: all 0.35s ease-in-out;
+            -o-transition: all 0.35s ease-in-out;
+            color: #fff;
+        }
+
+        .h4, h4 {
+            font-size: 1.5rem;
+        }
+    </style>
+
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,100,300"
+          rel="stylesheet"
+          type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,400,700"
+          rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Oswald:200,400,700"
+          rel="stylesheet" />
+    <link rel="stylesheet"
+          href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap -->
+    <link href="./asset/css/bootstrap.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./style.css" />
+    <!-- custom css -->
+    <link rel="stylesheet" href="./asset/css/vsStyle.css" />
+
+
+    <script src="scripts/jquery-3.3.1.min.js"></script>
+    <style>
+        .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+            color: #1e7ebf;
+            background-color: hsl(0deg 0% 100%);
+            border: 1px solid #1e7ebf;
+            font-weight: bold;
+            border-bottom: 3px solid #1e7ebf;
+        }
+
+        .hexagonshape.hexa {
+            background-color: green;
+        }
+
+            .hexagonshape.hexa::before {
+                content: "";
+                position: absolute;
+                top: -37.5px;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-left: 75px solid transparent;
+                border-right: 75px solid transparent;
+                border-bottom: 37.5px solid green;
+            }
+
+            .hexagonshape.hexa::after {
+                content: "";
+                position: absolute;
+                bottom: -37.5px;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-left: 75px solid transparent;
+                border-right: 75px solid transparent;
+                border-top: 37.5px solid green;
+            }
+
+        .hexagonshape.hexa1 {
+            background-color: hotpink;
+        }
+
+            .hexagonshape.hexa1::before {
+                content: "";
+                position: absolute;
+                top: -37.5px;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-left: 75px solid transparent;
+                border-right: 75px solid transparent;
+                border-bottom: 37.5px solid hotpink;
+            }
+
+            .hexagonshape.hexa1::after {
+                content: "";
+                position: absolute;
+                bottom: -37.5px;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-left: 75px solid transparent;
+                border-right: 75px solid transparent;
+                border-top: 37.5px solid hotpink;
+            }
+
+        .hexagonshape.hexa2 {
+            background-color: yellow;
+        }
+
+            .hexagonshape.hexa2::before {
+                content: "";
+                position: absolute;
+                top: -37.5px;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-left: 75px solid transparent;
+                border-right: 75px solid transparent;
+                border-bottom: 37.5px solid yellow;
+            }
+
+            .hexagonshape.hexa2::after {
+                content: "";
+                position: absolute;
+                bottom: -37.5px;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-left: 75px solid transparent;
+                border-right: 75px solid transparent;
+                border-top: 37.5px solid yellow;
+            }
+
+        .hexagonshape.hexa3 {
+            background-color: deepskyblue;
+            background-color: #63BD66; /* For browsers that do not support gradients */
+            /*background-image: linear-gradient(to right, red, yellow);*/
+        }
+
+            .hexagonshape.hexa3::before {
+                content: "";
+                position: absolute;
+                top: -37.5px;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-left: 75px solid transparent;
+                border-right: 75px solid transparent;
+                border-bottom: 37.5px solid #63BD66;
+            }
+
+            .hexagonshape.hexa3::after {
+                content: "";
+                position: absolute;
+                bottom: -37.5px;
+                left: 0;
+                width: 0;
+                height: 0;
+                border-left: 75px solid transparent;
+                border-right: 75px solid transparent;
+                border-top: 37.5px solid #63BD66;
+                /*background-color: red;*/ /* For browsers that do not support gradients */
+                /*background-image: linear-gradient(red, yellow);*/
+            }
+
+        .spacer {
+            height: 100px;
+        }
+
+        .hex-layer-6 {
+            display: grid;
+            grid-template-columns: repeat(6, 0fr);
+            margin: -18px 0px;
+            justify-content: center;
+            align-content: center;
+        }
+
+        .hex-layer-5 {
+            display: grid;
+            justify-content: center;
+            margin: -18px 0px;
+            align-content: center;
+            grid-template-columns: repeat(5, 0fr);
+        }
+
+        .hex-layer-4 {
+            display: grid;
+            margin: -18px 0px;
+            justify-content: center;
+            align-content: center;
+            grid-template-columns: repeat(4, 0fr);
+        }
+
+        .hex-layer-3 {
+            display: grid;
+            margin: -18px 0px;
+            justify-content: center;
+            align-content: center;
+            grid-template-columns: repeat(3, 0fr);
+        }
+
+        .hex-layer-2 {
+            display: grid;
+            margin: -18px 0px;
+            justify-content: center;
+            align-content: center;
+            grid-template-columns: repeat(2, 0fr);
+        }
+
+        .hex {
+            height: 120px;
+            width: 120px;
+            align-self: center;
+            background: #ffd100;
+            -webkit-clip-path: polygon( 50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25% );
+            clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+            transition: background 0.4s;
+        }
+
+            .hex:hover {
+                background: #ffff00;
+            }
+
+        .mask1, .mask2, .mask3, .mask4, .mask5 {
+            width: 150px;
+            height: 50px;
+            position: relative;
+            offset-rotate: reverse;
+            -ms-transform: rotate(20deg);
+            transform: rotate(-28deg);
+            margin-top: -29px;
+            margin-left: -17px;
+        }
+
+        .mask1 {
+            background-color: #00ACC1;
+        }
+
+        .mask2 {
+            background-color: #66BB6A;
+        }
+
+        .mask3 {
+            background-color: #C0CA33;
+        }
+
+        .mask4 {
+            background-color: #FFEE58;
+        }
+
+        .mask5 {
+            background-color: #FFA726;
+        }
+
+        .orange-bg {
+            background-color: #EF6C00;
+        }
+
+        .yellow-bg {
+            background-color: #FBC02D;
+        }
+
+        .darkgreen-bg {
+            background-color: #9E9D24;
+        }
+
+        .green-bg {
+            background-color: #388E3C;
+        }
+
+        .blue-bg {
+            background-color: #00838F;
+        }
+
+        .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:focus, .navbar-default .navbar-nav > .active > a:hover {
+            color: #1e7ebf !important;
+            background-color: hsl(0deg 0% 100%) !important;
+            border: 1px solid #1e7ebf;
+            font-weight: bold;
+            border-bottom: 3px solid #1e7ebf;
+        }
+
+        .nav > li > a:hover, .nav > li > a:active {
+            text-decoration: none;
+            background-color: #337ab7 !important;
+            color: #fff !important;
+        }
+
+        .nav-pills > li.active > a, .nav-pills > li.focus > a {
+            text-decoration: none;
+            background-color: #337ab7 !important;
+            color: #fff !important;
+        }
+
+        .my_font {
+            font-weight: bold;
+            color: #000;
+        }
+
+        .latest-news {
+            width: 100%;
+            margin: 0px;
+            float: left;
+        }
+
+        .l-news {
+            width: 100%;
+            margin: 0 auto;
+            padding: 0px;
+            float: left;
+        }
+
+        .test-scroll {
+            float: left;
+            width: 90%;
+            padding: 10px 0px 0px 0px;
+        }
+
+            .test-scroll p {
+                margin: 0px;
+            }
+
+            .test-scroll a {
+                font-weight: 600;
+                color: #ff6600;
+                text-decoration: none;
+                font-size: 14px;
+                margin-right: 20px;
+            }
+        .panel-primary > .panel-heading {
+            color: #fff;
+            background-color: #337ab7;
+            border-color: #337ab7;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="mainWrapper" ng-controller="IndexController">
+
+        <div class="topHeader">
+            <div class="container">
+                <div class="col-lg-6">
+                    <p>
+                        <span>A+</span>
+                        <span>A-</span>
+                        <!-- <span>Skip Header</span>-->
+                    </p>
+                </div>
+                <div class="col-lg-6">
+                    <div class="socialMediaLinks pull-right">
+                        <ul class="list-group">
+                            <li>
+                                <a target="_blank" href="https://twitter.com/tsbtet" >
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                         width="16"
+                                         height="16"
+                                         fill="white"
+                                         class="bi bi-twitter"
+                                         viewBox="0 0 16 16">
+                                        <path d="M5.026 15c6.038 0 9.341-5.003 9.341-9.334 0-.14 0-.282-.006-.422A6.685 6.685 0 0 0 16 3.542a6.658 6.658 0 0 1-1.889.518 3.301 3.301 0 0 0 1.447-1.817 6.533 6.533 0 0 1-2.087.793A3.286 3.286 0 0 0 7.875 6.03a9.325 9.325 0 0 1-6.767-3.429 3.289 3.289 0 0 0 1.018 4.382A3.323 3.323 0 0 1 .64 6.575v.045a3.288 3.288 0 0 0 2.632 3.218 3.203 3.203 0 0 1-.865.115 3.23 3.23 0 0 1-.614-.057 3.283 3.283 0 0 0 3.067 2.277A6.588 6.588 0 0 1 .78 13.58a6.32 6.32 0 0 1-.78-.045A9.344 9.344 0 0 0 5.026 15z" />
+                                    </svg>
+                                </a>
+                            </li>
+                            <li>
+                                <a target="_blank" href="https://www.facebook.com/SBTET-Telangana-1994473487332437/">
+                                    <svg xmlns="http://www.w3.org/2000/svg"
+                                         width="16"
+                                         height="16"
+                                         class="bi bi-facebook"
+                                         viewBox="0 0 16 16"
+                                         fill="white">
+                                        <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" />
+                                    </svg>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="logoSection">
+            <div class="container">
+                <div class="col-lg-6">
+                    <div class="logo">
+                        <img src="/asset/images/logo.png" alt=""  href="" ui-sref="index" class="img-responsive" />
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="headerContactInfo pull-right">
+                        <ul>
+                            <li>
+                                <i class="fa fa-envelope contactRounded"></i> <a href="#" class="my_font">polycet-te@telalangana.gov.in</a>
+                            </li>
+                            <li>
+                                <i class="fa fa-phone contactRounded"></i> <a href="#" class="my_font">    040-23222192</a>
+                            </li>
+                            <li>
+                                <i class="fab fa-google-play contactRounded"></i> <a href="#" class="my_font"> Download Mobile App</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="mainNavigation">
+            <nav class="navbar navbar-default navbar-static-top">
+                <div class="container">
+                    <div class="navbar-header">
+                        <button type="button"
+                                class="navbar-toggle collapsed"
+                                data-toggle="collapse"
+                                data-target="#navbar"
+                                aria-expanded="false"
+                                aria-controls="navbar">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse">
+                        <ul class="nav navbar-nav">
+                            <li class=""><a href="" ui-sref="index"><i class="fa fa-home" aria-hidden="true"></i> </a></li>
+                            <li><a href="/Booklet/Polycet2022Booklet.pdf" download target="_blank"> <i class="fas fa-chalkboard-teacher"></i> Instruction Booklet</a></li>
+                            <li><a target="_blank" href="http://www.polycetts.nic.in/"><i class="fab fa-glide"></i>  User Guide</a></li>
+                            <li><a target="_blank" href="http://www.polycetts.nic.in/"><i class="fas fa-tablet-alt"></i> Online Application</a></li>
+                            <li>
+                             
+                                <a class="MobileSidebar" href="" id="index.ContactUs" ui-sref="index.ContactUs"><i class="fa fa-phone-square" aria-hidden="true"></i> Contact Us</a>
+                            </li>
+                        </ul>
+                        <ul class="nav navbar-nav navbar-right">
+                            <li><a href="" ui-sref="index.WebsiteLogin">LogIn</a></li>
+                        </ul>
+                    </div>
+                    <!--/.nav-collapse -->
+                </div>
+            </nav>
+        </div>
+
+        <ui-view>
+            <div class="">
+                <div class="latest-news">
+
+                    <div class="">
+                        <div class="col-md-12">
+                            <div class="l-news">
+                                <a ui-sref="index.Latestnews"> <h2>What's New</h2> </a>
+                                <span class="test-scroll">
+                                    <marquee onmouseover="this.stop();" onmouseout="this.start();" scrollamount="10">
+                                        <p>
+
+                                            <a href="#">
+                                             <!--   <img class="gifImg" height="25" width="40" src="../../contents/img/gif.gif" /> 2022 SSC Students can apply once SSC Board releases Hall Tickets-->
+                                                <!--<img class="gifImg" height="25" width="40" src="../../contents/img/gif.gif" /> 25-03-2022 POLYCET 2022 Detailed Notification-->
+                                            </a>
+                                            <!--<a class="MobileSidebar"href="#">SBTET-Hyderabad- Academics- VI sem of C-16 Curriculum - Industrial Training/ In house Project - Instructions communicated - Reg.</a>
+                                            <a href="#">SBTET-TS-Hyderabad-Academics-C-18 (DGT,DHMCT,DHS,DLT,DME,DMET,DMG,DPKG,DPT,DTT) Curriculum-II Semester syllabus for 2018-19 - Communicated - Part-II - Reg</a>
+                                            <a href="#">SBTET-TS-Hyderabad-Academics-C-18 (DAA,DAE,DCCP,DCE,DCHE,DCME,DECE,DEEE,DEIE,DFWT) Curriculum-II Semester syllabus for 2018-19 - Communicated - Part-I - Reg</a>-->
+
+                                        </p>
+                                    </marquee>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <section class="secondSection pt-50 pb-50">
+                <div class="container">
+                    <div class="col-lg-6">
+                        <!-- tabs section started -->
+                        <div class="tabSection">
+                            <ul id="myTabs"
+                                class="nav nav-pills nav-justified"
+                                role="tablist"
+                                data-tabs="tabs">
+                                <li class="active">
+                                    <a href="#notifications" data-toggle="tab">Notifications</a>
+                                </li>
+                                <li><a href="#quickLinks" data-toggle="tab">Quick Links</a></li>
+                                <li><a href="#about" data-toggle="tab">About</a></li>
+                            </ul>
+                            <div class="tab-content">
+                                <div role="tabpanel"
+                                     class="tab-pane fade in active"
+                                     id="notifications">
+                                    <ul>
+                                        <li class="my_point">
+                                            <i class="far fa-newspaper"></i> <span> 07-05-2022  </span><a target="_blank" href="/Notifications/Polycet2022Notification.pdf">POLYCET 2022 Notification</a>
+                                        </li>
+                                        <!--<li class="my_point">
+                                            <a href="#">25-03-2022 POLYCET 2022 Brief Notification</a>
+                                        </li>
+                                        <li class="my_point">
+                                            <a href="#">25-03-2022 POLYCET 2022 Brief Notification</a>
+                                        </li>
+                                        <li class="my_point">
+                                            <a href="#">25-03-2022 POLYCET 2022 Brief Notification</a>
+                                        </li>-->
+                                    </ul>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="quickLinks">
+                                    <div class="tab_content">
+                                        <div class="tabs_item">
+                                            <div class="links">
+                                                <ul>
+                                                    <!--  <li ng-click="OpenModule('index.StudentConsolidatedResult')"><a class="confirmation" ui-sref="index.StudentConsolidatedResult" href="#"><i class="fa fa-arrow-circle-right">&nbsp;</i>Important Dates</a></li>-->
+                                                    <li><a href="/Booklet/Polycet2022Booklet.pdf" class="confirmation"><i class="fa fa-arrow-circle-right">&nbsp;</i>Instruction Booklet</a></li>
+                                                    <li><a target="_blank" class="confirmation" href="http://polycetts.nic.in"><i class="fa fa-arrow-circle-right">&nbsp;</i>User Guide</a></li>
+                                                    <li><a target="_blank" class="confirmation" href="http://polycetts.nic.in"><i class="fa fa-arrow-circle-right">&nbsp;</i>Online Application</a></li>
+                                                    <li ng-click="OpenModule('index.ContactUs')"><a class="confirmation" href="" id="index.ContactUs" ui-sref="index.ContactUs"><i class="fa fa-arrow-circle-right">&nbsp;</i>Contact Us</a></li>
+                                                    <li><a target="_blank" class="confirmation" href="https://sbtet.telangana.gov.in"><i class="fa fa-arrow-circle-right">&nbsp;</i> SBTET </a></li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div role="tabpanel" class="tab-pane fade" id="about">
+                                    <p style="text-align: justify;">
+                                        The State Board of Technical Education and Training (SBTET), Telangana, Hyderabad will conduct “Polytechnic Common Entrance Test (POLYCET)” for the candidates
+                                        seeking admission in to all Diploma Courses in Engineering / Non Engineering / Technology offered at Polytechnics / Institutions (including Aided and Unaided Private
+                                        Polytechnics / Institutions running in Private Engineering Colleges) in Telangana State and Diploma in Agriculture, Agriculture Engineering, Seed Technology & Organic
+                                        Agriculture Courses offered by Professor Jay Shankar Telangana State Agricultural University (PJTSAU), Diploma Courses offered by Sri Konda Laxman Telangana State
+                                        Horticulture University (SKLTSHU) and 6 years integrated (2+4) undergraduate (B. Tech) courses offered by Rajiv Gandhi University of Knowledge Technologies (RGUKT),
+                                        Basar, Nirmal District, Telangana.
+                                    </p>
+                                </div>
+                            </div>
+                            <!-- tabs section started -->
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="studentSteps">
+                            <img src="/asset/images/grp_img.png" class="img-responsive" />
+                            <div class="fillApplication">
+                                <span>Step 01</span>
+                                <h4>
+                                    <a target="_blank" href="http://www.polycetts.nic.in/">Fill Application</a>
+                                </h4>
+                            </div>
+                            <div class="feePayment">
+                                <span>Step 02</span>
+                                <h4>
+                                    <a target="_blank" href="http://www.polycetts.nic.in/">Fee Payment</a>
+                                </h4>
+                            </div>
+                            <div class="paymentStatus">
+                                <span>Step 03</span>
+                                <h4>
+                                    <a target="_blank" href="http://www.polycetts.nic.in/">Payment Status</a>
+                                </h4>
+                            </div>
+                            <div class="applicatonStatus">
+                                <span>Step 04</span>
+                                <h4>
+                                    <a target="_blank" href="http://www.polycetts.nic.in/">Application Status</a>
+                                </h4>
+                            </div>
+                            <div class="printApplication">
+                                <span>Step 05</span>
+                                <h4>
+                                    <a target="_blank" href="http://www.polycetts.nic.in/">Print Application</a>
+                                </h4>
+                            </div>
+                        </div>
+                        <!--<div class="" align="center">
+                        <div class="hex-layer-3">
+                            <div class="hex blue-bg">
+                                <div class="mask1"></div>
+                                <div class="fillApplication">
+
+                                </div>
+                            </div>
+                            <div class="hex green-bg">
+                                <div class="mask2"></div>
+                            </div>
+                            <div class="hex darkgreen-bg">
+                                <div class="mask3"></div>
+                            </div>
+                        </div>
+                        <div class="hex-layer-2">
+                            <div class="hex yellow-bg">
+                                <div class="mask4"></div>
+                            </div>
+                            <div class="hex orange-bg">
+                                <div class="mask5"></div>
+                            </div>
+                        </div>
+                        <div>-->
+                        <!--<div class="stepsInfographic">
+                            <div class="hexagonshape_2">
+                                <div class="hexagonshape_2_innerdiv1">
+                                    <div class="hexagonshape">
+                                        <div>
+                                            <span>Icon</span>
+                                            <p>Ste 1</p>
+                                            <h6>Fill Application</h6>
+                                        </div>
+                                    </div>
+                                    <div class="hexagonshape hexa">
+                                        <div>
+                                            <span>Icon</span>
+                                            <p>Ste 1</p>
+                                            <h6>Fill Application</h6>
+                                        </div>
+                                    </div>
+                                    <div class="hexagonshape hexa1">
+                                        <div>
+                                            <span>Icon</span>
+                                            <p>Ste 1</p>
+                                            <h6>Fill Application</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="hexagonshape_2_innerdiv2">
+                                    <div class="hexagonshape hexa2">
+                                        <div>
+                                            <span>Icon</span>
+                                            <p>Ste 1</p>
+                                            <h6>Fill Application</h6>
+                                        </div>
+                                    </div>
+                                    <div class="hexagonshape hexa3">
+                                        <div>
+                                            <span>Icon</span>
+                                            <p>Ste 1</p>
+                                            <h6>Fill Application</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                        <!--</div>
+                        </div>-->
+                    </div>
+                </div>
+            </section>
+            <section class="bg-grey-color pt-50 pb-50">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-7">
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr style="background-color: #1e7ebf; color: white" class="panel panel-primary">
+                                        <th colspan="2" style="text-align: center" class="panel-heading">
+                                            <b>Important Dates</b>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Commencement of online registration for POLYCET-2022
+                                        </td>
+                                        <td>  09-05-2022</td>
+
+                                    </tr>
+                                    <tr class="">
+                                        <td>
+                                            Last date for online registration without late fee
+                                        </td>
+                                        <td>
+
+                                            04-06-2022
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Last date for online registration with late fee of Rs. 100/-
+
+                                        </td>
+                                        <td>
+
+                                            05-06-2022
+                                        </td>
+
+                                    </tr>
+                                    <tr class="">
+                                        <td>
+                                            Date of conduct of POLYCET-2022
+
+                                        </td>
+                                        <td>
+
+
+                                            30-06-2022
+
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr style="background-color: #1e7ebf; color: white" class="panel panel-primary">
+                                        <th colspan="2" style="text-align: center" class="panel-heading">
+                                            <b>Application Fee</b>
+                                        </th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            Category
+
+                                        </td>
+                                        <td>
+                                            Fee (Rs.)
+                                        </td>
+
+                                    </tr>
+                                    <tr class="">
+                                        <td>
+                                            For SC/ST
+
+                                        </td>
+                                        <td>
+                                            250/-
+
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <td>
+                                            Others
+
+
+                                        </td>
+                                        <td>
+                                            450/-
+
+                                        </td>
+
+                                    </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="col-lg-5">
+                            <div class="panel panel-primary">
+                                <div class="panel-heading">Contact Info</div>
+                                <div class="panel-body">
+                                    <div class="direct-contact-container">
+                                        <ul class="contact-list">
+                                            <li class="list-item">
+                                                <i class="fa fa-map-marker contactRounded"></i>
+                                                <span class="contact-text place  my_font">
+                                                    Sankethika Vidhaha Bhavan, Masab Tank, Hyderabad,
+                                                    Telangana – 500 028, India.
+                                                </span>
+                                            </li>
+
+                                            <li class="list-item">
+                                                <i class="fa fa-phone contactRounded"></i>
+                                                <span class="contact-text phone">
+                                                    <a href="tel:040-23222192" title="Give me a call" class="my_font">040-23222192</a>
+                                                </span>
+                                            </li>
+
+                                            <li class="list-item">
+                                                <i class="fa fa-envelope contactRounded"></i>
+                                                <span class="contact-text gmail">
+                                                    <a href="mailto:#" title="Send me an email" class="my_font">polycet-te@telalangana.gov.in</a>
+                                                </span>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </ui-view>
+        <div class="spacer"></div>
+        <section class="footerSection bg-darkGrey">
+            <div class="container">
+                <div class="footer">
+                    <span>
+                        © 2022 This is the official website of State Board of Technical
+                        Education & Training, Telangana. All rights reserved
+                    </span>
+                    <span class="site-visit float-right">{{SiteViews == null ||SiteViews == 0? 0: SiteViews}}</span>
+                    <span class="float-right">Total Site Views: </span>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="assets/js/bootstrap.min.js"></script>
+</body>
+</html>
