@@ -1,0 +1,60 @@
+09/10/2021 12:53:49 pm
+Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+
+09/10/2021 12:53:49 pm
+Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+
+09/10/2021 12:54:03 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+09/10/2021 12:54:03 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+09/10/2021 12:54:03 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+09/10/2021 12:54:03 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+09/10/2021 12:54:03 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+09/10/2021 12:54:03 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+09/10/2021 12:54:03 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+09/10/2021 12:54:03 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+09/10/2021 12:54:34 pm
+Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+
+09/10/2021 12:54:34 pm
+Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+
+09/10/2021 12:54:35 pm
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=10136; handshake=6686; 
+
+09/10/2021 12:54:35 pm
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=10136; handshake=6686; 
+
+09/10/2021 12:54:35 pm
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=10136; handshake=6686; 
+
+09/10/2021 12:54:35 pm
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=10136; handshake=6686; 
+
+09/10/2021 12:54:35 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+09/10/2021 12:54:35 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+09/10/2021 12:54:35 pm
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=10136; handshake=6686; 
+
+09/10/2021 12:54:35 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+

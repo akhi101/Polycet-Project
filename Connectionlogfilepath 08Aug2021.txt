@@ -1,0 +1,45 @@
+08/08/2021 10:16:21 pm
+Procedure or function 'USP_GET_FINE_AMOUNT' expects parameter '@ExamMonthYearId', which was not supplied.
+
+08/08/2021 10:20:21 pm
+Procedure or function 'USP_GET_FINE_AMOUNT' expects parameter '@ExamMonthYearId', which was not supplied.
+
+08/08/2021 10:20:26 pm
+Procedure or function 'USP_GET_FINE_AMOUNT' expects parameter '@ExamMonthYearId', which was not supplied.
+
+08/08/2021 10:21:43 pm
+Procedure or function 'USP_GET_FINE_AMOUNT' expects parameter '@ExamMonthYearId', which was not supplied.
+
+08/08/2021 10:24:17 pm
+Procedure or function 'USP_GET_FINE_AMOUNT' expects parameter '@ExamMonthYearId', which was not supplied.
+
+08/08/2021 10:26:36 pm
+Procedure or function 'USP_GET_FINE_AMOUNT' expects parameter '@ExamMonthYearId', which was not supplied.
+
+08/08/2021 10:27:40 pm
+Procedure or function 'USP_GET_FINE_AMOUNT' expects parameter '@ExamMonthYearId', which was not supplied.
+
+08/08/2021 10:30:34 pm
+Procedure or function 'USP_GET_FINE_AMOUNT' expects parameter '@ExamMonthYearId', which was not supplied.
+
+08/08/2021 10:30:46 pm
+Procedure or function 'USP_GET_FINE_AMOUNT' expects parameter '@ExamMonthYearId', which was not supplied.
+
+08/08/2021 10:30:49 pm
+Procedure or function 'USP_GET_FINE_AMOUNT' expects parameter '@ExamMonthYearId', which was not supplied.
+
+08/08/2021 10:47:28 pm
+Procedure or function 'USP_GET_FINE_AMOUNT' expects parameter '@ExamMonthYearId', which was not supplied.
+
+08/08/2021 11:01:55 pm
+Procedure or function 'USP_GET_FINE_AMOUNT' expects parameter '@ExamMonthYearId', which was not supplied.
+
+08/08/2021 11:01:57 pm
+Procedure or function 'USP_GET_FINE_AMOUNT' expects parameter '@ExamMonthYearId', which was not supplied.
+
+08/08/2021 11:15:09 pm
+Procedure or function 'USP_GET_FINE_AMOUNT' expects parameter '@ExamMonthYearId', which was not supplied.
+
+08/08/2021 11:15:10 pm
+Procedure or function 'USP_GET_FINE_AMOUNT' expects parameter '@ExamMonthYearId', which was not supplied.
+

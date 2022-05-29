@@ -1,0 +1,169 @@
+30/08/2021 1:14:17 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:14:17 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:14:17 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:14:17 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:14:17 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:14:17 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:14:18 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+30/08/2021 1:14:18 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+30/08/2021 1:14:18 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:14:18 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+30/08/2021 1:15:16 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:16 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:16 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:16 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:17 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:17 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:17 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:17 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:17 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+30/08/2021 1:15:17 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+30/08/2021 1:15:17 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:17 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+30/08/2021 1:15:17 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+30/08/2021 1:15:17 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:17 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+30/08/2021 1:15:17 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:18 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+30/08/2021 1:15:18 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:18 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:18 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:18 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:18 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:18 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:18 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+30/08/2021 1:15:18 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:19 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+30/08/2021 1:15:19 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+30/08/2021 1:15:19 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:19 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:19 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:19 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:19 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+30/08/2021 1:15:19 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:19 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:20 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 1:15:20 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+30/08/2021 1:15:20 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+30/08/2021 1:15:20 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+30/08/2021 10:30:49 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 10:30:52 pm
+A network-related or instance-specific error occurred while establishing a connection to SQL Server. The server was not found or was not accessible. Verify that the instance name is correct and that SQL Server is configured to allow remote connections. (provider: Named Pipes Provider, error: 40 - Could not open a connection to SQL Server)
+
+30/08/2021 10:30:52 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+30/08/2021 10:33:04 pm
+Cannot insert the value NULL into column 'Id', table 'SBPDB_DEV.dbo.SBP_SFP_M_StudentFeePaymentDateAmount'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+
+30/08/2021 11:35:06 pm
+Cannot insert the value NULL into column 'Id', table 'SBPDB_DEV.dbo.SBP_SFP_M_StudentFeePaymentDateAmount'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+
+30/08/2021 11:42:27 pm
+Cannot insert the value NULL into column 'Id', table 'SBPDB_DEV.dbo.SBP_SFP_M_StudentFeePaymentDateAmount'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+
+30/08/2021 11:43:57 pm
+Cannot insert the value NULL into column 'Id', table 'SBPDB_DEV.dbo.SBP_SFP_M_StudentFeePaymentDateAmount'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+

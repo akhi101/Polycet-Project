@@ -1,0 +1,21 @@
+26/11/2021 10:28:48 pm
+Procedure or function 'ADM_SFP_GET_CollegeExaminationCenterList' expects parameter '@ExamTypeID', which was not supplied.
+
+26/11/2021 10:29:04 pm
+Procedure or function 'ADM_SFP_GET_CollegeExaminationCenterList' expects parameter '@ExamTypeID', which was not supplied.
+
+26/11/2021 10:29:16 pm
+Procedure or function 'ADM_SFP_GET_CollegeExaminationCenterList' expects parameter '@ExamTypeID', which was not supplied.
+
+26/11/2021 10:29:49 pm
+Procedure or function 'ADM_SFP_GET_CollegeExaminationCenterList' expects parameter '@ExamTypeID', which was not supplied.
+
+26/11/2021 10:30:28 pm
+Procedure or function 'ADM_SFP_GET_CollegeExaminationCenterList' expects parameter '@ExamTypeID', which was not supplied.
+
+26/11/2021 11:36:10 pm
+Procedure or function 'ADM_SFP_GET_AffiliatedExaminationCenterListForMapping' expects parameter '@ExamTypeID', which was not supplied.
+
+26/11/2021 11:36:22 pm
+Procedure or function 'ADM_SFP_GET_AffiliatedExaminationCenterListForMapping' expects parameter '@ExamTypeID', which was not supplied.
+

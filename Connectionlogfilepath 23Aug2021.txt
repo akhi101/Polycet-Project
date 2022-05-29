@@ -1,0 +1,63 @@
+23/08/2021 12:59:16 pm
+Conversion failed when converting the nvarchar value 'nvnn' to data type bit.
+
+23/08/2021 1:01:25 pm
+Conversion failed when converting the nvarchar value 'nvnn' to data type bit.
+
+23/08/2021 9:31:10 pm
+Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+
+23/08/2021 9:31:19 pm
+JSON text is not properly formatted. Unexpected character '"' is found at position 0.
+
+23/08/2021 9:33:38 pm
+No mapping exists from object type Newtonsoft.Json.Linq.JArray to a known managed provider native type.
+
+23/08/2021 9:34:22 pm
+No mapping exists from object type Newtonsoft.Json.Linq.JArray to a known managed provider native type.
+
+23/08/2021 9:34:41 pm
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=3885; handshake=25558; 
+
+23/08/2021 9:37:40 pm
+No mapping exists from object type Newtonsoft.Json.Linq.JArray to a known managed provider native type.
+
+23/08/2021 9:45:09 pm
+No mapping exists from object type Newtonsoft.Json.Linq.JArray to a known managed provider native type.
+
+23/08/2021 9:49:03 pm
+No mapping exists from object type Newtonsoft.Json.Linq.JArray to a known managed provider native type.
+
+23/08/2021 9:52:20 pm
+No mapping exists from object type Newtonsoft.Json.Linq.JArray to a known managed provider native type.
+
+23/08/2021 9:56:56 pm
+No mapping exists from object type Newtonsoft.Json.Linq.JArray to a known managed provider native type.
+
+23/08/2021 9:58:31 pm
+No mapping exists from object type Newtonsoft.Json.Linq.JArray to a known managed provider native type.
+
+23/08/2021 9:59:37 pm
+No mapping exists from object type Newtonsoft.Json.Linq.JArray to a known managed provider native type.
+
+23/08/2021 10:01:12 pm
+No mapping exists from object type Newtonsoft.Json.Linq.JArray to a known managed provider native type.
+
+23/08/2021 10:03:41 pm
+No mapping exists from object type Newtonsoft.Json.Linq.JArray to a known managed provider native type.
+
+23/08/2021 10:05:01 pm
+Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+
+23/08/2021 10:05:01 pm
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=24742; handshake=29578; 
+
+23/08/2021 10:05:01 pm
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=24742; handshake=29578; 
+
+23/08/2021 10:05:01 pm
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=24742; handshake=29578; 
+
+23/08/2021 10:05:03 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+

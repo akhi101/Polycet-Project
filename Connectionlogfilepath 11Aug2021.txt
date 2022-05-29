@@ -1,0 +1,6 @@
+11/08/2021 11:31:02 am
+Conversion failed when converting date and/or time from character string.
+
+11/08/2021 5:47:25 pm
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=40331; handshake=0; 
+

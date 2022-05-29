@@ -1,0 +1,504 @@
+E:\SoftwareSuite\SoftwareSuite\bin\SoftwareSuite.dll.config
+E:\SoftwareSuite\SoftwareSuite\bin\SoftwareSuite.dll
+E:\SoftwareSuite\SoftwareSuite\bin\SoftwareSuite.pdb
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\csc.exe
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\csc.exe.config
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\csc.rsp
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\csi.exe
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\csi.exe.config
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\csi.rsp
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\Microsoft.Managed.Core.targets
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.AppContext.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.Collections.Immutable.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.Console.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.Globalization.Calendars.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.IO.Compression.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.IO.FileSystem.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.Net.Http.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.Net.Sockets.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.Reflection.Metadata.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.ValueTuple.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.Xml.XmlDocument.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.Xml.XPath.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\vbc.exe
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\vbc.exe.config
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\vbc.rsp
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\VBCSCompiler.exe
+E:\SoftwareSuite\SoftwareSuite\bin\roslyn\VBCSCompiler.exe.config
+E:\SoftwareSuite\SoftwareSuite\bin\Antlr3.Runtime.dll
+E:\SoftwareSuite\SoftwareSuite\bin\BouncyCastle.Crypto.dll
+E:\SoftwareSuite\SoftwareSuite\bin\DocumentFormat.OpenXml.dll
+E:\SoftwareSuite\SoftwareSuite\bin\HtmlRenderer.dll
+E:\SoftwareSuite\SoftwareSuite\bin\HtmlRenderer.PdfSharp.dll
+E:\SoftwareSuite\SoftwareSuite\bin\itextsharp.dll
+E:\SoftwareSuite\SoftwareSuite\bin\itextsharp.xmlworker.dll
+E:\SoftwareSuite\SoftwareSuite\bin\MailKit.dll
+E:\SoftwareSuite\SoftwareSuite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\SoftwareSuite\SoftwareSuite\bin\Microsoft.Web.Infrastructure.dll
+E:\SoftwareSuite\SoftwareSuite\bin\MimeKit.dll
+E:\SoftwareSuite\SoftwareSuite\bin\MongoDB.Bson.dll
+E:\SoftwareSuite\SoftwareSuite\bin\MongoDB.Driver.Core.dll
+E:\SoftwareSuite\SoftwareSuite\bin\MongoDB.Driver.dll
+E:\SoftwareSuite\SoftwareSuite\bin\Newtonsoft.Json.dll
+E:\SoftwareSuite\SoftwareSuite\bin\NReco.PdfGenerator.dll
+E:\SoftwareSuite\SoftwareSuite\bin\PdfSharp.Charting.dll
+E:\SoftwareSuite\SoftwareSuite\bin\PdfSharp.dll
+E:\SoftwareSuite\SoftwareSuite\bin\QRCoder.dll
+E:\SoftwareSuite\SoftwareSuite\bin\RestSharp.dll
+E:\SoftwareSuite\SoftwareSuite\bin\Select.HtmlToPdf.dll
+E:\SoftwareSuite\SoftwareSuite\bin\SharpCompress.dll
+E:\SoftwareSuite\SoftwareSuite\bin\System.Buffers.dll
+E:\SoftwareSuite\SoftwareSuite\bin\System.IO.Packaging.dll
+E:\SoftwareSuite\SoftwareSuite\bin\System.Net.Http.Formatting.dll
+E:\SoftwareSuite\SoftwareSuite\bin\System.Web.Helpers.dll
+E:\SoftwareSuite\SoftwareSuite\bin\System.Web.Http.dll
+E:\SoftwareSuite\SoftwareSuite\bin\System.Web.Http.WebHost.dll
+E:\SoftwareSuite\SoftwareSuite\bin\System.Web.Mvc.dll
+E:\SoftwareSuite\SoftwareSuite\bin\System.Web.Optimization.dll
+E:\SoftwareSuite\SoftwareSuite\bin\System.Web.Razor.dll
+E:\SoftwareSuite\SoftwareSuite\bin\System.Web.WebPages.Deployment.dll
+E:\SoftwareSuite\SoftwareSuite\bin\System.Web.WebPages.dll
+E:\SoftwareSuite\SoftwareSuite\bin\System.Web.WebPages.Razor.dll
+E:\SoftwareSuite\SoftwareSuite\bin\WebGrease.dll
+E:\SoftwareSuite\SoftwareSuite\bin\BouncyCastle.Crypto.xml
+E:\SoftwareSuite\SoftwareSuite\bin\DocumentFormat.OpenXml.xml
+E:\SoftwareSuite\SoftwareSuite\bin\HtmlRenderer.pdb
+E:\SoftwareSuite\SoftwareSuite\bin\HtmlRenderer.PdfSharp.pdb
+E:\SoftwareSuite\SoftwareSuite\bin\itextsharp.xml
+E:\SoftwareSuite\SoftwareSuite\bin\MailKit.xml
+E:\SoftwareSuite\SoftwareSuite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\SoftwareSuite\SoftwareSuite\bin\MimeKit.pdb
+E:\SoftwareSuite\SoftwareSuite\bin\MimeKit.xml
+E:\SoftwareSuite\SoftwareSuite\bin\MongoDB.Bson.xml
+E:\SoftwareSuite\SoftwareSuite\bin\MongoDB.Driver.xml
+E:\SoftwareSuite\SoftwareSuite\bin\MongoDB.Driver.Core.xml
+E:\SoftwareSuite\SoftwareSuite\bin\Newtonsoft.Json.xml
+E:\SoftwareSuite\SoftwareSuite\bin\NReco.PdfGenerator.xml
+E:\SoftwareSuite\SoftwareSuite\bin\PdfSharp.xml
+E:\SoftwareSuite\SoftwareSuite\bin\PdfSharp.Charting.xml
+E:\SoftwareSuite\SoftwareSuite\bin\RestSharp.xml
+E:\SoftwareSuite\SoftwareSuite\bin\Select.HtmlToPdf.xml
+E:\SoftwareSuite\SoftwareSuite\bin\System.Buffers.xml
+E:\SoftwareSuite\SoftwareSuite\bin\System.IO.Packaging.xml
+E:\SoftwareSuite\SoftwareSuite\bin\System.Net.Http.Formatting.xml
+E:\SoftwareSuite\SoftwareSuite\bin\System.Web.Helpers.xml
+E:\SoftwareSuite\SoftwareSuite\bin\System.Web.Http.xml
+E:\SoftwareSuite\SoftwareSuite\bin\System.Web.Http.WebHost.xml
+E:\SoftwareSuite\SoftwareSuite\bin\System.Web.Mvc.xml
+E:\SoftwareSuite\SoftwareSuite\bin\System.Web.Optimization.xml
+E:\SoftwareSuite\SoftwareSuite\bin\System.Web.Razor.xml
+E:\SoftwareSuite\SoftwareSuite\bin\System.Web.WebPages.xml
+E:\SoftwareSuite\SoftwareSuite\bin\System.Web.WebPages.Deployment.xml
+E:\SoftwareSuite\SoftwareSuite\bin\System.Web.WebPages.Razor.xml
+E:\SoftwareSuite\SoftwareSuite\bin\Antlr3.Runtime.pdb
+E:\SoftwareSuite\SoftwareSuite\bin\de\PdfSharp.resources.dll
+E:\SoftwareSuite\SoftwareSuite\bin\de\PdfSharp.Charting.resources.dll
+E:\SoftwareSuite\SoftwareSuite\bin\Select.Html.dep
+E:\SoftwareSuite\SoftwareSuite\obj\Production\SoftwareSuite.csproj.AssemblyReference.cache
+E:\SoftwareSuite\SoftwareSuite\obj\Production\SoftwareSuite.csproj.CoreCompileInputs.cache
+E:\SoftwareSuite\SoftwareSuite\obj\Production\SoftwareSuite.csproj.CopyComplete
+E:\SoftwareSuite\SoftwareSuite\obj\Production\SoftwareSuite.dll
+E:\SoftwareSuite\SoftwareSuite\obj\Production\SoftwareSuite.pdb
+D:\Polycet\Polycet\SoftwareSuite\bin\SoftwareSuite.dll.config
+D:\Polycet\Polycet\SoftwareSuite\bin\SoftwareSuite.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\SoftwareSuite.pdb
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\csc.exe
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\csc.exe.config
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\csc.rsp
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\csi.exe
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\csi.exe.config
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\csi.rsp
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.Win32.Primitives.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.AppContext.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Collections.Immutable.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Console.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Globalization.Calendars.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.IO.Compression.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.IO.Compression.ZipFile.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.IO.FileSystem.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Net.Http.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Net.Sockets.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Reflection.Metadata.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Threading.Tasks.Extensions.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.ValueTuple.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Xml.XPath.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\vbc.exe
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\vbc.exe.config
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\vbc.rsp
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\VBCSCompiler.exe
+D:\Polycet\Polycet\SoftwareSuite\bin\roslyn\VBCSCompiler.exe.config
+D:\Polycet\Polycet\SoftwareSuite\bin\Antlr3.Runtime.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\BouncyCastle.Crypto.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\DocumentFormat.OpenXml.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\HtmlRenderer.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\HtmlRenderer.PdfSharp.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\itextsharp.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\itextsharp.xmlworker.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\MailKit.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\Microsoft.Web.Infrastructure.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\MimeKit.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\MongoDB.Bson.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\MongoDB.Driver.Core.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\MongoDB.Driver.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\Newtonsoft.Json.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\NReco.PdfGenerator.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\PdfSharp.Charting.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\PdfSharp.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\QRCoder.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\RestSharp.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\Select.HtmlToPdf.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\SharpCompress.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\System.Buffers.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\System.IO.Packaging.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\System.Net.Http.Formatting.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\System.Web.Helpers.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\System.Web.Http.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\System.Web.Http.WebHost.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\System.Web.Mvc.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\System.Web.Optimization.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\System.Web.Razor.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\System.Web.WebPages.Deployment.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\System.Web.WebPages.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\System.Web.WebPages.Razor.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\WebGrease.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\BouncyCastle.Crypto.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\DocumentFormat.OpenXml.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\HtmlRenderer.pdb
+D:\Polycet\Polycet\SoftwareSuite\bin\HtmlRenderer.PdfSharp.pdb
+D:\Polycet\Polycet\SoftwareSuite\bin\itextsharp.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\MailKit.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\MimeKit.pdb
+D:\Polycet\Polycet\SoftwareSuite\bin\MimeKit.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\MongoDB.Bson.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\MongoDB.Driver.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\MongoDB.Driver.Core.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\Newtonsoft.Json.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\NReco.PdfGenerator.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\PdfSharp.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\PdfSharp.Charting.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\RestSharp.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\Select.HtmlToPdf.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\System.Buffers.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\System.IO.Packaging.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\System.Net.Http.Formatting.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\System.Web.Helpers.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\System.Web.Http.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\System.Web.Http.WebHost.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\System.Web.Mvc.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\System.Web.Optimization.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\System.Web.Razor.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\System.Web.WebPages.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\System.Web.WebPages.Deployment.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\System.Web.WebPages.Razor.xml
+D:\Polycet\Polycet\SoftwareSuite\bin\Antlr3.Runtime.pdb
+D:\Polycet\Polycet\SoftwareSuite\bin\de\PdfSharp.resources.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\de\PdfSharp.Charting.resources.dll
+D:\Polycet\Polycet\SoftwareSuite\bin\Select.Html.dep
+D:\Polycet\Polycet\SoftwareSuite\obj\Production\SoftwareSuite.csproj.AssemblyReference.cache
+D:\Polycet\Polycet\SoftwareSuite\obj\Production\SoftwareSuite.csproj.CoreCompileInputs.cache
+D:\Polycet\Polycet\SoftwareSuite\obj\Production\SoftwareSuite.csproj.CopyComplete
+D:\Polycet\Polycet\SoftwareSuite\obj\Production\SoftwareSuite.dll
+D:\Polycet\Polycet\SoftwareSuite\obj\Production\SoftwareSuite.pdb
+E:\Polycet\SoftwareSuite\bin\SoftwareSuite.dll.config
+E:\Polycet\SoftwareSuite\bin\SoftwareSuite.dll
+E:\Polycet\SoftwareSuite\bin\SoftwareSuite.pdb
+E:\Polycet\SoftwareSuite\bin\roslyn\csc.exe
+E:\Polycet\SoftwareSuite\bin\roslyn\csc.exe.config
+E:\Polycet\SoftwareSuite\bin\roslyn\csc.rsp
+E:\Polycet\SoftwareSuite\bin\roslyn\csi.exe
+E:\Polycet\SoftwareSuite\bin\roslyn\csi.exe.config
+E:\Polycet\SoftwareSuite\bin\roslyn\csi.rsp
+E:\Polycet\SoftwareSuite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Polycet\SoftwareSuite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Polycet\SoftwareSuite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Polycet\SoftwareSuite\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.AppContext.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.Collections.Immutable.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.Console.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.Globalization.Calendars.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.IO.Compression.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.IO.FileSystem.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.Net.Http.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.Net.Sockets.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.Reflection.Metadata.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.ValueTuple.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.Xml.XPath.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Polycet\SoftwareSuite\bin\roslyn\vbc.exe
+E:\Polycet\SoftwareSuite\bin\roslyn\vbc.exe.config
+E:\Polycet\SoftwareSuite\bin\roslyn\vbc.rsp
+E:\Polycet\SoftwareSuite\bin\roslyn\VBCSCompiler.exe
+E:\Polycet\SoftwareSuite\bin\roslyn\VBCSCompiler.exe.config
+E:\Polycet\SoftwareSuite\bin\Antlr3.Runtime.dll
+E:\Polycet\SoftwareSuite\bin\BouncyCastle.Crypto.dll
+E:\Polycet\SoftwareSuite\bin\DocumentFormat.OpenXml.dll
+E:\Polycet\SoftwareSuite\bin\HtmlRenderer.dll
+E:\Polycet\SoftwareSuite\bin\HtmlRenderer.PdfSharp.dll
+E:\Polycet\SoftwareSuite\bin\itextsharp.dll
+E:\Polycet\SoftwareSuite\bin\itextsharp.xmlworker.dll
+E:\Polycet\SoftwareSuite\bin\MailKit.dll
+E:\Polycet\SoftwareSuite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Polycet\SoftwareSuite\bin\Microsoft.Web.Infrastructure.dll
+E:\Polycet\SoftwareSuite\bin\MimeKit.dll
+E:\Polycet\SoftwareSuite\bin\MongoDB.Bson.dll
+E:\Polycet\SoftwareSuite\bin\MongoDB.Driver.Core.dll
+E:\Polycet\SoftwareSuite\bin\MongoDB.Driver.dll
+E:\Polycet\SoftwareSuite\bin\Newtonsoft.Json.dll
+E:\Polycet\SoftwareSuite\bin\NReco.PdfGenerator.dll
+E:\Polycet\SoftwareSuite\bin\PdfSharp.Charting.dll
+E:\Polycet\SoftwareSuite\bin\PdfSharp.dll
+E:\Polycet\SoftwareSuite\bin\QRCoder.dll
+E:\Polycet\SoftwareSuite\bin\RestSharp.dll
+E:\Polycet\SoftwareSuite\bin\Select.HtmlToPdf.dll
+E:\Polycet\SoftwareSuite\bin\SharpCompress.dll
+E:\Polycet\SoftwareSuite\bin\System.Buffers.dll
+E:\Polycet\SoftwareSuite\bin\System.IO.Packaging.dll
+E:\Polycet\SoftwareSuite\bin\System.Net.Http.Formatting.dll
+E:\Polycet\SoftwareSuite\bin\System.Web.Helpers.dll
+E:\Polycet\SoftwareSuite\bin\System.Web.Http.dll
+E:\Polycet\SoftwareSuite\bin\System.Web.Http.WebHost.dll
+E:\Polycet\SoftwareSuite\bin\System.Web.Mvc.dll
+E:\Polycet\SoftwareSuite\bin\System.Web.Optimization.dll
+E:\Polycet\SoftwareSuite\bin\System.Web.Razor.dll
+E:\Polycet\SoftwareSuite\bin\System.Web.WebPages.Deployment.dll
+E:\Polycet\SoftwareSuite\bin\System.Web.WebPages.dll
+E:\Polycet\SoftwareSuite\bin\System.Web.WebPages.Razor.dll
+E:\Polycet\SoftwareSuite\bin\WebGrease.dll
+E:\Polycet\SoftwareSuite\bin\BouncyCastle.Crypto.xml
+E:\Polycet\SoftwareSuite\bin\DocumentFormat.OpenXml.xml
+E:\Polycet\SoftwareSuite\bin\HtmlRenderer.pdb
+E:\Polycet\SoftwareSuite\bin\HtmlRenderer.PdfSharp.pdb
+E:\Polycet\SoftwareSuite\bin\itextsharp.xml
+E:\Polycet\SoftwareSuite\bin\MailKit.xml
+E:\Polycet\SoftwareSuite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Polycet\SoftwareSuite\bin\MimeKit.pdb
+E:\Polycet\SoftwareSuite\bin\MimeKit.xml
+E:\Polycet\SoftwareSuite\bin\MongoDB.Bson.xml
+E:\Polycet\SoftwareSuite\bin\MongoDB.Driver.xml
+E:\Polycet\SoftwareSuite\bin\MongoDB.Driver.Core.xml
+E:\Polycet\SoftwareSuite\bin\Newtonsoft.Json.xml
+E:\Polycet\SoftwareSuite\bin\NReco.PdfGenerator.xml
+E:\Polycet\SoftwareSuite\bin\PdfSharp.xml
+E:\Polycet\SoftwareSuite\bin\PdfSharp.Charting.xml
+E:\Polycet\SoftwareSuite\bin\RestSharp.xml
+E:\Polycet\SoftwareSuite\bin\Select.HtmlToPdf.xml
+E:\Polycet\SoftwareSuite\bin\System.Buffers.xml
+E:\Polycet\SoftwareSuite\bin\System.IO.Packaging.xml
+E:\Polycet\SoftwareSuite\bin\System.Net.Http.Formatting.xml
+E:\Polycet\SoftwareSuite\bin\System.Web.Helpers.xml
+E:\Polycet\SoftwareSuite\bin\System.Web.Http.xml
+E:\Polycet\SoftwareSuite\bin\System.Web.Http.WebHost.xml
+E:\Polycet\SoftwareSuite\bin\System.Web.Mvc.xml
+E:\Polycet\SoftwareSuite\bin\System.Web.Optimization.xml
+E:\Polycet\SoftwareSuite\bin\System.Web.Razor.xml
+E:\Polycet\SoftwareSuite\bin\System.Web.WebPages.xml
+E:\Polycet\SoftwareSuite\bin\System.Web.WebPages.Deployment.xml
+E:\Polycet\SoftwareSuite\bin\System.Web.WebPages.Razor.xml
+E:\Polycet\SoftwareSuite\bin\Antlr3.Runtime.pdb
+E:\Polycet\SoftwareSuite\bin\de\PdfSharp.resources.dll
+E:\Polycet\SoftwareSuite\bin\de\PdfSharp.Charting.resources.dll
+E:\Polycet\SoftwareSuite\bin\Select.Html.dep
+E:\Polycet\SoftwareSuite\obj\Production\SoftwareSuite.csproj.AssemblyReference.cache
+E:\Polycet\SoftwareSuite\obj\Production\SoftwareSuite.csproj.CoreCompileInputs.cache
+E:\Polycet\SoftwareSuite\obj\Production\SoftwareSuite.csproj.CopyComplete
+E:\Polycet\SoftwareSuite\obj\Production\SoftwareSuite.dll
+E:\Polycet\SoftwareSuite\obj\Production\SoftwareSuite.pdb
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\SoftwareSuite.dll.config
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\SoftwareSuite.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\SoftwareSuite.pdb
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\csc.exe
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\csc.exe.config
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\csc.rsp
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\csi.exe
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\csi.exe.config
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\csi.rsp
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\Microsoft.Win32.Primitives.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.AppContext.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Collections.Immutable.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Console.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Diagnostics.DiagnosticSource.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Globalization.Calendars.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.IO.Compression.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.IO.Compression.ZipFile.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.IO.FileSystem.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Net.Http.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Net.Sockets.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Reflection.Metadata.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Runtime.InteropServices.RuntimeInformation.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Threading.Tasks.Extensions.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.ValueTuple.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Xml.XPath.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\vbc.exe
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\vbc.exe.config
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\vbc.rsp
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\VBCSCompiler.exe
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\roslyn\VBCSCompiler.exe.config
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\Antlr3.Runtime.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\BouncyCastle.Crypto.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\DocumentFormat.OpenXml.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\HtmlRenderer.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\HtmlRenderer.PdfSharp.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\itextsharp.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\itextsharp.xmlworker.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\MailKit.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\Microsoft.Web.Infrastructure.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\MimeKit.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\MongoDB.Bson.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\MongoDB.Driver.Core.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\MongoDB.Driver.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\Newtonsoft.Json.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\NReco.PdfGenerator.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\PdfSharp.Charting.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\PdfSharp.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\QRCoder.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\RestSharp.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\Select.HtmlToPdf.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\SharpCompress.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.Buffers.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.IO.Packaging.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.Net.Http.Formatting.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.Web.Helpers.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.Web.Http.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.Web.Http.WebHost.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.Web.Mvc.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.Web.Optimization.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.Web.Razor.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.Web.WebPages.Deployment.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.Web.WebPages.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.Web.WebPages.Razor.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\WebGrease.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\BouncyCastle.Crypto.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\DocumentFormat.OpenXml.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\HtmlRenderer.pdb
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\HtmlRenderer.PdfSharp.pdb
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\itextsharp.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\MailKit.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\MimeKit.pdb
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\MimeKit.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\MongoDB.Bson.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\MongoDB.Driver.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\MongoDB.Driver.Core.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\Newtonsoft.Json.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\NReco.PdfGenerator.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\PdfSharp.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\PdfSharp.Charting.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\RestSharp.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\Select.HtmlToPdf.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.Buffers.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.IO.Packaging.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.Net.Http.Formatting.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.Web.Helpers.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.Web.Http.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.Web.Http.WebHost.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.Web.Mvc.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.Web.Optimization.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.Web.Razor.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.Web.WebPages.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.Web.WebPages.Deployment.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\System.Web.WebPages.Razor.xml
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\Antlr3.Runtime.pdb
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\de\PdfSharp.resources.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\de\PdfSharp.Charting.resources.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\bin\Select.Html.dep
+E:\Latest Polycet\Polycet\SoftwareSuite\obj\Production\SoftwareSuite.csproj.AssemblyReference.cache
+E:\Latest Polycet\Polycet\SoftwareSuite\obj\Production\SoftwareSuite.csproj.CoreCompileInputs.cache
+E:\Latest Polycet\Polycet\SoftwareSuite\obj\Production\SoftwareSuite.csproj.CopyComplete
+E:\Latest Polycet\Polycet\SoftwareSuite\obj\Production\SoftwareSuite.dll
+E:\Latest Polycet\Polycet\SoftwareSuite\obj\Production\SoftwareSuite.pdb

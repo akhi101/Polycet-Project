@@ -1,0 +1,6 @@
+24/08/2021 10:21:37 am
+Conversion failed when converting the nvarchar value 'No' to data type bit.
+
+24/08/2021 1:14:29 pm
+Conversion failed when converting date and/or time from character string.
+

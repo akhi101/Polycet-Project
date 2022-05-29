@@ -1,0 +1,4 @@
+21/09/2021 12:03:43 am
+Cannot insert the value NULL into column 'id', table 'SBPDB_DEV.dbo.SBP_SS_M_ODCData'; column does not allow nulls. INSERT fails.
+The statement has been terminated.
+

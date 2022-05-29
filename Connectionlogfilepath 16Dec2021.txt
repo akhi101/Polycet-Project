@@ -1,0 +1,315 @@
+16/12/2021 9:04:47 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:04:47 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:04:47 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:04:47 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:04:48 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:04:48 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:04:48 pm
+The ConnectionString property has not been initialized.
+
+16/12/2021 9:04:48 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:04:48 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:04:48 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:04:48 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+16/12/2021 9:04:48 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:04:48 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:04:48 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+16/12/2021 9:04:48 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:04:48 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+16/12/2021 9:05:36 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:36 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:36 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:36 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:36 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:36 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+16/12/2021 9:05:38 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:38 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:38 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:38 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:38 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:38 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+16/12/2021 9:05:40 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:40 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:40 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:40 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:40 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:40 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+16/12/2021 9:05:41 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:41 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:41 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:41 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:41 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:41 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+16/12/2021 9:05:42 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:42 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:42 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:42 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:42 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:42 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:42 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:42 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:42 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:42 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:42 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+16/12/2021 9:05:42 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:42 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:42 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:42 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:42 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+16/12/2021 9:05:43 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:43 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:43 pm
+The process cannot access the file 'E:\SoftwareSuite\SoftwareSuite\Connectionlogfilepath 16Dec2021.txt' because it is being used by another process.
+
+16/12/2021 9:05:43 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+16/12/2021 9:05:43 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:43 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:44 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+16/12/2021 9:05:44 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:44 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:44 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:44 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:44 pm
+The process cannot access the file 'E:\SoftwareSuite\SoftwareSuite\Connectionlogfilepath 16Dec2021.txt' because it is being used by another process.
+
+16/12/2021 9:05:44 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:45 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+16/12/2021 9:05:45 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:45 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:45 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:45 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:45 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+16/12/2021 9:05:45 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:45 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:45 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:46 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:46 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+16/12/2021 9:05:46 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:46 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:46 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:46 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:46 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:46 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:47 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:47 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+16/12/2021 9:05:47 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:47 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:47 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:05:47 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+16/12/2021 9:06:13 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:06:13 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:06:13 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:06:13 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:06:13 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:06:13 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:06:13 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:06:13 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+16/12/2021 9:06:14 pm
+The process cannot access the file 'E:\SoftwareSuite\SoftwareSuite\Connectionlogfilepath 16Dec2021.txt' because it is being used by another process.
+
+16/12/2021 9:06:14 pm
+The ConnectionString property has not been initialized.
+
+16/12/2021 9:06:14 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:06:14 pm
+Object reference not set to an instance of an object.
+
+16/12/2021 9:06:14 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+

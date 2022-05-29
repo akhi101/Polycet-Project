@@ -1,0 +1,30 @@
+09/09/2021 10:30:48 pm
+Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+
+09/09/2021 10:30:48 pm
+Timeout expired.  The timeout period elapsed prior to obtaining a connection from the pool.  This may have occurred because all pooled connections were in use and max pool size was reached.
+
+09/09/2021 10:30:48 pm
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=61499; handshake=24; 
+
+09/09/2021 10:30:48 pm
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=61499; handshake=24; 
+
+09/09/2021 10:30:48 pm
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=61499; handshake=24; 
+
+09/09/2021 10:30:48 pm
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=61499; handshake=24; 
+
+09/09/2021 10:30:48 pm
+Connection Timeout Expired.  The timeout period elapsed while attempting to consume the pre-login handshake acknowledgement.  This could be because the pre-login handshake failed or the server was unable to respond back in time.  The duration spent while attempting to connect to this server was - [Pre-Login] initialization=61499; handshake=24; 
+
+09/09/2021 10:30:48 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+09/09/2021 10:30:48 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
+09/09/2021 10:30:48 pm
+ExecuteNonQuery requires an open and available Connection. The connection's current state is closed.
+
