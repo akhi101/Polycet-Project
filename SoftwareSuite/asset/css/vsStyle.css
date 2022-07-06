@@ -58,15 +58,18 @@ ul.list-group li{
 }
     .tab-content ul li.my_point::before {
         content: "";
-        width: 7px;
-        height: 7px;
+        /* width: 7px; */
+        /* height: 7px; */
         position: absolute;
         border-radius: 50%;
-        background: #e91e63;
+        /* background: #e91e63; */
         left: 4rem;
+        font-size: 26px;
         margin-right: 22px;
-        margin-top: 6px;
+        margin-top: -11px;
+        color: #66bb6a;
         margin-left: -12px;
+        content: "\1F892";
     }
 .tab-content ul li a{
     margin-left: 18px;

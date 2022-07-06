@@ -1,0 +1,14 @@
+﻿<div class="modal-header ">
+    <h4 class="modal-title text-center">
+        <b>Absent List</b>
+        <!--<button type="button" class="btn btn-circle btn-close btn-modal-close" ng-click="closeModal()">&times;</button>-->
+    </h4>
+</div>
+<div class="modal-body">
+    <span ng-repeat="data in AbsentList"> {{data.HallTicketNo}} {{$last ? '' : ($index==data.length-1) ? ',' : ', '}}</span>
+  
+</div>
+<div class="modal-footer">
+    <button type="button" class="btn btn-success pull-right" ng-click="SubmitData()">Proceed</button>
+    <button type="button" class="btn btn-default pull-left" ng-click="closeModal()">Cancel</button>
+</div>

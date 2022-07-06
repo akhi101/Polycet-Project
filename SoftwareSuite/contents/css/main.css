@@ -1907,7 +1907,7 @@ table table-responsive thead {
 /* for custom scrollbar for webkit browser*/
 
 ::-webkit-scrollbar {
-    width: 6px;
+    width: 15px;
     height: 6px;
     background: #d3d3d3;
 }

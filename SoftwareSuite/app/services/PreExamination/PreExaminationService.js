@@ -35,6 +35,14 @@
             return DataAccessService.getDataAll('api/PreExamination/getExamTypesForExamCenters');
         };
 
+        this.GetPolycetYears = function () {
+            return DataAccessService.getDataAll('api/PreExamination/GetPolycetYears');
+        };
+
+        this.GetAttendanceList = function () {
+            return DataAccessService.getDataAll('api/PreExamination/GetAttendanceList');
+        };
+        
         this.GetCategory = function () {
             return DataAccessService.getDataAll('Admission/GetCategory');
         };
@@ -68,7 +76,13 @@
             };
             return DataAccessService.getDataWithPara('api/PreExamination/getActiveExamTypesByScheme', paramObject);
         };
-        
+
+        this.GetAttendanceList = function (ExaminationCentreCode) {
+            var paramObject = {
+                "ExaminationCentreCode": ExaminationCentreCode
+            };
+            return DataAccessService.getDataWithPara('api/PreExamination/GetAttendanceList', paramObject);
+        };
 
         this.GetPolycetExamCenters = function (AcademicYear) {
             var paramObject = {
@@ -108,17 +122,32 @@
             };
             return DataAccessService.postData('api/PreExamination/GetResultsReports', paramObject);
         };
+     
+        this.SetAttendanceList = function (Json, ExaminationCentreCode, UserLoginName) {
+            var paramObject = {
+                "Json": Json, "ExaminationCentreCode": ExaminationCentreCode, "UserLoginName": UserLoginName
+            };
+            return DataAccessService.postData('api/PreExamination/SetAttendanceList', paramObject);
+        };
+        
 
    
+        this.UpdatePolycetYear = function (Id, Active, UserName) {
+            var paramObject = {
+                "Id": Id, "Active": Active, "UserName": UserName
+            };
+            return DataAccessService.postData('api/PreExamination/UpdatePolycetYear', paramObject);
+        };
+
         this.UpdateExamCenters = function (UserLoginName, ExaminationCentreID, ExaminationCentreName, ExaminationCentreTypeID, ExaminationCentrePhone, ExaminationCentreCapacity, Active) {
             var paramObject = {
                 "UserLoginName": UserLoginName, "ExaminationCentreID": ExaminationCentreID, "ExaminationCentreName": ExaminationCentreName,
                 "ExaminationCentreTypeID": ExaminationCentreTypeID, "ExaminationCentrePhone": ExaminationCentrePhone, "ExaminationCentreCapacity": ExaminationCentreCapacity,
-                 "Active": Active
+                "Active": Active
             };
             return DataAccessService.postData('api/PreExamination/UpdateExamCenters', paramObject);
         };
-        
+
 
         this.GetAmbedkarResultsReport = function (scheme) {
             var paramObject = {
@@ -378,6 +407,14 @@
         }
 
 
+        this.SetPolycetYear = function (PolycetYear,UserName) {
+            var paramObject = {
+                "PolycetYear": PolycetYear, "UserName": UserName
+            };
+            var promise = DataAccessService.postData('api/PreExamination/SetPolycetYear', paramObject);
+            return promise;
+        }
+
         this.SetExamCenters = function (ExaminationCentreName, ExaminationCentreTypeID, ExaminationCentrePhone, ExaminationCentreCapacity, UserLoginName) {
             var paramObject = {
                 "ExaminationCentreName": ExaminationCentreName, "ExaminationCentreTypeID": ExaminationCentreTypeID,
@@ -386,6 +423,8 @@
             var promise = DataAccessService.postData('api/PreExamination/SetExamCenters', paramObject);
             return promise;
         }
+
+        
         
 
         this.GetHolidaysForTimeTable = function (startdate, days) {
@@ -732,6 +771,13 @@
             return DataAccessService.postData('api/StudentCertificate/GetGenuinenessCertificate', param);
         };
 
+        this.OpenAttendanceReport = function (ExaminationCentreCode) {
+            var param = { "ExaminationCentreCode": ExaminationCentreCode }
+            console.log(param)
+            return DataAccessService.postData('api/StudentCertificate/OpenAttendanceReport', param);
+        };
+        
+
         this.GetTwshCertificateTobeSignedlocation = function (PinJson) {
             var param = { "PINjson": PinJson }
             return DataAccessService.postData('api/StudentCertificate/GetTwshCertificate', param);
@@ -742,8 +788,8 @@
             return DataAccessService.postData('api/StudentCertificate/GetDuplicateDiplomaCertificate', param);
         };
 
-        this.GetMigrationCertificateTobeSignedlocation = function (PinJson) {
-            var param = { "PINjson": PinJson }
+        this.GetMigrationCertificate = function (HallticketNumber) {
+            var param = { "HallticketNumber": HallticketNumber }
             return DataAccessService.postData('api/StudentCertificate/GetMigrationCertificate', param);
         };
 
@@ -756,6 +802,18 @@
             var param = { "ApplicationNo": ApplicationNo }
             return DataAccessService.getDataWithPara('api/PreExamination/GetTranscriptDataforEmail', param);
         };
+
+        this.GetPolycetRankDetails = function (HallticketNumber) {
+            var param = { "HallticketNumber": HallticketNumber }
+            return DataAccessService.getDataWithPara('api/PreExamination/GetPolycetRankDetails', param);
+        };
+
+        this.ViewOmrDetails = function (HallticketNumber) {
+            var param = { "HallticketNumber": HallticketNumber }
+            return DataAccessService.getDataWithPara('api/PreExamination/ViewOmrDetails', param);
+        };
+        
+
 
         this.SetTranscriptEmailStatus = function (ApplicationNo) {
             var param = { "ApplicationNo": ApplicationNo }
@@ -2702,6 +2760,31 @@
                 return DataAccessService.getDataAll('api/PreExamination/getAllSemester');
             },
 
+            this.GetNrReport = function () {
+            return DataAccessService.getDataAll('api/PreExamination/GetNrReport');
+            },
+            
+
+            this.GetUsers = function () {
+            return DataAccessService.getDataAll('api/PreExamination/GetUsers'); 
+            },
+
+            this.SendSms = function ( Mobile) {
+                var paramObj = {
+                     "Mobile": Mobile
+                }
+                var promise = DataAccessService.postData('api/PreExamination/SendAllSms', paramObj);
+                return promise;
+            };
+       
+        this.ChangePassword = function (reqdata) {
+            var paramObj = reqdata
+            var promise = DataAccessService.postData('api/SystemUser/ChangePassword', paramObj);
+            return promise;
+        };
+
+        
+
             this.getSemestersByScheme = function (StudentTypeId, SchemeId) {
                 var paramObject = { "SchemeId": SchemeId, "StudentTypeId": StudentTypeId };
                 return DataAccessService.getDataWithPara('api/PreExamination/getSemestersByScheme', paramObject);
@@ -2808,10 +2891,10 @@
                 return promise;
             },
 
-            this.PrinterNrDownload = function (AcademicYearId, ExamMonthYearId, StudentTypeId, ExamTypeId, semid) {
+            this.GetPrinterNr = function (ExaminationCentreCode) {
             var paramObj = {
-                "AcademicYearId": AcademicYearId, "ExamMonthYearId": ExamMonthYearId, "StudentTypeId": StudentTypeId, "ExamTypeId": ExamTypeId,"semid": semid };
-                var promise = DataAccessService.getDataWithPara('PreExaminationReport/PrinterNrDownload', paramObj);
+                "ExaminationCentreCode": ExaminationCentreCode };
+            var promise = DataAccessService.getDataWithPara('api/PreExamination/GetPrinterNr', paramObj);
                 return promise;
             },
          
@@ -2833,6 +2916,25 @@
             this.FeeNotPaidExcelReport = function () {
                 return DataAccessService.getDataAll('PreExaminationReport/FeeNotPaidExcelReport');
             },
+
+
+            this.GetExcelNrReport = function () {
+            return DataAccessService.getDataAll('api/PreExamination/GetExcelNrReport');
+            },
+
+            this.GetExcelAttendanceReport = function () {
+            return DataAccessService.getDataAll('api/PreExamination/GetExcelAttendanceReport');
+            },
+
+            this.GetDetailedExcelAttendanceReport = function () {
+            return DataAccessService.getDataAll('api/PreExamination/GetDetailedExcelAttendanceReport');
+            },
+            
+            this.GetAttendanceReport = function () {
+            return DataAccessService.getDataAll('api/PreExamination/GetAttendanceReport');
+            },
+            
+            
 
          this.GetNBAReports1Excel = function () {
              return DataAccessService.getDataAll('api/PreExamination/GetNBAReports1Excel');
@@ -2882,6 +2984,19 @@
                 var promise = DataAccessService.getDataWithPara('api/PreExamination/getDetailsByPins', paramObj);
                 return promise;
             },
+
+            
+            this.SetSms = function (UserLoginName) {
+            var paramObj = { "UserLoginName": UserLoginName };
+            var promise = DataAccessService.getDataWithPara('api/PreExamination/SetSms', paramObj);
+            return promise;
+        },
+            
+            this.GetAttendanceReport = function (pin) {
+            var paramObj = { "pin": pin };
+            var promise = DataAccessService.getDataWithPara('api/PreExamination/GetAttendanceReport', paramObj);
+            return promise;
+        },
 
             this.getTranscriptDetailsByPin = function (pin) {
                 var paramObj = { "pin": pin };

@@ -1,0 +1,77 @@
+﻿<style>
+    .OmrImage{
+        height:1500px;
+        width:100%;
+    }
+    .nodata {
+        height: 150px;
+        width: 150px;
+    }
+    .card {
+     
+        margin-top: -4px;
+        padding: 10px;
+    }
+</style>
+<div ng-controller="ViewOmrController">
+    <div class="breadcrumb-header">
+        <!-- breadcrumb Open -->
+        <div class="container">
+            <section class="content-header">
+                <h5>View OMR</h5>
+               
+            </section>
+        </div>
+        <!-- breadcrumb Close -->
+    </div>
+    <div class="sm-spacer"></div>
+    <div class="container">
+        <!--<div class="col-md-6">
+            <button class="btn bck_btn"><a href="#!/Dashboard" class="backA"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</a></button>
+        </div>-->
+        <!--<div class="col-md-6 pull-right">
+            <button class="bck_btn btn btn-success pull-right" ng-click="printMarksEntered()">Print </button>
+        </div>-->
+
+    </div> <div class="container card_print">
+    <div class="col-md-12" style="padding:0px!important">
+        <div class="cl-details">
+            <h2>View OMR</h2>
+        </div>
+    </div>
+    <div class="card">
+        <form name="ExamCenterForm">
+            <div class="form-group col-md-3">
+                <label>Enter Hall Ticket Number</label>
+                <input class="date-own form-control" placeholder="Hall Ticket Number" autocomplete="off" ng-model="HallTicketNumber" type="text">
+                <!--<input type="text" placeholder="Exam Centre Name" ng-model="ExamCenter" class="form-control" required />-->
+            </div>
+
+            <div class="form-group col-md-3">
+                <button class="btn btn-info " style="margin-top:32px;" type="submit" ng-click="ViewOmr()">Submit</button>
+
+            </div>
+           
+
+        </form>
+    </div>
+    <div class="sm-spacer"></div>
+    <div class="card" ng-show="Data">
+
+        <img ng-src="{{Barcode}}" id="omr" class="OmrImage" />
+    </div>
+    <div style="width:100%;text-align:center;">
+        <div>
+            <img src="/asset/images/loadingnew.gif" class="loadingimg" ng-show="Loading" />
+        </div>
+
+    </div>
+    <div class="col-md-12">
+        <div class="" style="text-align: center">
+            <img src="/asset/images/nodata.png" ng-show="nodata" class="nodata" width="64" />
+
+        </div>
+
+    </div>
+</div>
+</div>

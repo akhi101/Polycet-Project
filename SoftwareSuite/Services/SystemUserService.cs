@@ -213,7 +213,7 @@ namespace SoftwareSuite.Services
             }
         }
 
-        public DataTable GetChangePassword(dbHandler dbHandler, Int32 UserId, string OldPassword, string NewPassword)
+        public DataTable ChangePassword(dbHandler dbHandler, Int32 UserLoginID, string OldPassword, string NewPassword)
         {
             DataTable dt = new DataTable();
             try
@@ -223,8 +223,8 @@ namespace SoftwareSuite.Services
                     using (var cmd = new SqlCommand("SP_SET_ChangePassword", conn))
                     {
                         cmd.CommandType = CommandType.StoredProcedure;
-                        cmd.Parameters.Add(new SqlParameter("@UserId", UserId));
-                        cmd.Parameters.Add(new SqlParameter("@UserPassword", OldPassword));
+                        cmd.Parameters.Add(new SqlParameter("@UserLoginID", UserLoginID));
+                        cmd.Parameters.Add(new SqlParameter("@OldPassword", OldPassword));
                         cmd.Parameters.Add(new SqlParameter("@NewPassword", NewPassword));
                         conn.Open();
                         var da = new SqlDataAdapter(cmd);

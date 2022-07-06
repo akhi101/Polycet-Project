@@ -53,6 +53,7 @@
          background: #fff;
          box-shadow: 0 0.15rem 1.75rem 0 rgb(33 40 50 / 15%);
          color: #000 !important;
+         margin:10px;
      }
      .bg2 {
          position: absolute;
@@ -73,11 +74,29 @@
          color: #f00 !important;
          cursor: pointer;
      }
-
+     .card.my_card.mycard1:hover {
+         /* background: #2962ff; */
+         /* background-image: linear-gradient(135deg, #0061f2 0%, rgba(105, 0, 199, 0.8) 100%) !important; */
+         /* background-image: linear-gradient(110deg, #fdcd3b 0%, #ffed4b 60%)!important; */
+         background: linear-gradient(110deg, #ffc000 60%, #ffed4b 60%);
+         background: linear-gradient(120deg, #ffc000 50%, #ffed4b 50%);
+         background: linear-gradient(120deg, #003e8a 50%, #2d4de1 50%);
+         color: #fff !important;
+         color: #f00 !important;
+         cursor: pointer;
+     }
+     .card.my_card.mycard2:hover {
+      
+         background: linear-gradient(120deg, #1d912a 50%, #2fdc5b 50%);
+         color: #fff !important;
+         color: #f00 !important;
+         cursor: pointer;
+     }
+    
      .my_font {
          position: relative;
          top: 48px;
-        /* color: #000;*/
+         /* color: #000;*/
          font-weight: bold;
          text-align: center;
      }
@@ -104,6 +123,15 @@
              background: #2962ff;
              background-image: linear-gradient(135deg, #0061f2 0%, rgba(105, 0, 199, 0.8) 100%) !important;
          }*/
+     @media print {
+         .wrapper {
+             display: block !important;
+         }
+     }
+     .loadingimg {
+         height: 200px;
+         width: 200px;
+     }
 </style>
  <div ng-controller="DashboardController">
 
@@ -198,10 +226,31 @@
                      <!--</marquee>-->
                      <!-- Small boxes (Stat box) -->
                      <div class="row widgets-container">
-                         <div class="card  my_card"  ui-sref="Dashboard.ExamCenters">
-                             <img src="https://cets.apsche.ap.gov.in/EAPCET/images/bg2.png" class="bg2" />
-                             <h4 class="my_font" ui-sref="Dashboard.ExamCenters">Examination Centers</h4>
+                         <!--<div class="card  my_card" ui-sref="Dashboard.ExamCenters">
+           <img src="../../contents/img/bg_gif.gif" class="bg2" />
+        <h4 class="my_font" ui-sref="Dashboard.ExamCenters">Examination Centers</h4>
+    </div>
+    <div class="card  my_card mycard1" ui-sref="Dashboard.PolycetYear">
+        <img src="../../contents/img/bg_gif.gif" class="bg2" />
+        <h4 class="my_font" ui-sref="Dashboard.PolycetYear">Polycet Year</h4>
+    </div>-->
+                         <div class="card  my_card mycard3" ui-sref="Dashboard.NrDownload">
+                             <img src="../../contents/img/bg_gif.gif" class="bg2" />
+                             <h4 class="my_font" ui-sref="Dashboard.NrDownload">NR Download</h4>
                          </div>
+                         <div class="card  my_card mycard2" ui-sref="Dashboard.ExamCentersList">
+                             <img src="../../contents/img/bg_gif.gif" class="bg2" />
+                             <h4 class="my_font" ui-sref="Dashboard.ExamCentersList">Mark Attendance  </h4>
+                         </div>
+                         <div class="card  my_card mycard3" ui-sref="Dashboard.NrReport" ng-show="userType==1">
+                             <img src="../../contents/img/bg_gif.gif" class="bg2" />
+                             <h4 class="my_font" ui-sref="Dashboard.NrReport">NR Report</h4>
+                         </div>
+                         <div class="card  my_card mycard2" ui-sref="Dashboard.AttendanceReport" ng-show="userType==1">
+                             <img src="../../contents/img/bg_gif.gif" class="bg2" />
+                             <h4 class="my_font" ui-sref="Dashboard.AttendanceReport">Attendance Report</h4>
+                         </div>
+
                      </div>
                      <!--<div class="row widgets-container">
                     <div class="col-lg-3 col-xs-6" ng-repeat="item in modulesList">
