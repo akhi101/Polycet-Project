@@ -1,0 +1,86 @@
+﻿<style>
+    .loadingimg {
+        height: 200px;
+        width:200px;
+    }
+</style>
+<div ng-controller="NrDownloadController">
+    <div class="container">
+        <div class="sm-spacer"></div>
+        <div class="container">
+            <div class="col-md-12">
+                <button class="btn bck_btn"><a href="#!/Dashboard" class="backA"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</a></button>
+            </div>
+        </div>
+        <!--<div class="col-md-12 " ng-show="Data">
+            <div class="pull-right">
+                <a class="ExportToExcel1 pointer"
+                   id="ExportToExcel1" ng-click="DownloadtoExcel()">
+                    <i class="fa fa-file-excel-o"></i>
+                    Export to Excel
+                </a>
+            </div>
+
+        </div>-->
+        <div class="col-md-12" style="padding:0px!important" ng-show="Data">
+            <div class="cl-details">
+                <h2>Nr Download</h2>
+            </div>
+        </div>
+        <div class="row" ng-show="Data">
+
+            <div id="preExamReports" class="table-responsive table-custom-tables-tb col-md-12 ">
+                <table class="table table-bordered  table-striped table-rounded ">
+                    <thead>
+                        <tr class="cb-1">
+                            <th class="text-center" style="width: 2%;">S.No</th>
+                            <th class="text-center" style="width: 10%;">Exam Centre Code</th>
+                            <th>Exam Centre Name</th>
+                            <th>No of Students</th>
+                            <th class="text-center" style="width: 12%;">Exam Centre Phone</th>
+                            <th class="text-center">Download</th>
+                            <!-- <th class="text-center">Delete</th>-->
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="background-color:#fff!important;cursor:pointer" ng-repeat="data in GetExamCenters">
+
+                            <td class="text-center">{{$index + 1}}</td>
+                            <td class="text-center">
+                                {{data.ExaminationCentreCode}}
+                            </td>
+                            <td>
+                                {{data.ExaminationCentreName}}
+                            </td>
+                            <td class="text-center">
+                                {{data.Alloted}}
+                            </td>
+                            <td class="text-center">{{data.ExaminationCentrePhone}}</td>
+
+                            <td class="text-center">
+                                <i style="color: #337ab7;" title="Download" ng-click="DownloadNr(data.ExaminationCentreCode)" class="fa fa-download" aria-hidden="true"></i>
+                            </td>
+                            <!-- <td class="text-center" style="cursor:pointer"><button ng-click="DeleteTimeSlot(data.Id)" class="btn btn-xs btn-danger"><b>Delete</b></button></td>-->
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div style="width:100%;text-align:center;">
+            <div ng-show="loading">
+                <img src="/asset/images/loadingnew.gif" class="loadingimg"  width="64" />
+                <h4><b>Generating NR. This may take a while, Please be Patient.</b></h4>
+            </div>
+
+        </div>
+        <div class="col-md-12">
+            <div class="nodata">
+                <img src="/asset/images/nodata.png" ng-show="nodata" width="64" />
+            </div>
+
+        </div>
+    </div>
+</div>

@@ -65,10 +65,74 @@
             </div>
         </div>
         <div class="card">
+            <!--Exam Centers
+            Add
+            Polycet Year
+            Districts drop
+            Mandals drop
+            Exam Center name
+            Address text area
+            Pincode
+            Chief Superdent MObile Number
+            After adding need to send opt with confirmation
+            Capacity (Max 1000)
+            College Type(gov,private,aided)
+            Examination Center Sequence
+            Exam Center Type-->
+
             <form name="ExamCenterForm">
                 <div class="form-group col-md-3">
                     <label>Exam Centre Name</label>
                     <input type="text" placeholder="Exam Centre Name" ng-model="ExamCenter" class="form-control" required />
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Polycet Year</label>
+                    <input type="text" placeholder="Exam Centre Name" ng-model="ExamCenter" class="form-control" required />
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Districts</label>
+                    <select class="form-control" ng-model="ExaminationCentreType"
+                            ng-options="data.ExaminationCentreTypeID as data.ExaminationCentreTypeName for data in GetExamCenterTypes" required>
+                        <option value="" selected>Choose</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Mandals</label>
+                    <select class="form-control" ng-model="ExaminationCentreType"
+                            ng-options="data.ExaminationCentreTypeID as data.ExaminationCentreTypeName for data in GetExamCenterTypes" required>
+                        <option value="" selected>Choose</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Pincode</label>
+                    <input type="text" placeholder="Exam Centre Name" ng-model="ExamCenter" class="form-control" required />
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Address</label>
+                    <textarea type="text" placeholder="Exam Centre Name" ng-model="ExamCenter" class="form-control" required></textarea>
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Chief Superdent MObile Number</label>
+                    <input type="text" placeholder="Exam Centre Name" ng-model="ExamCenter" class="form-control" required />
+                </div>
+                <div class="form-group col-md-3">
+                    <label>OTP</label>
+                    <input type="text" placeholder="Exam Centre Name" ng-model="ExamCenter" class="form-control" required />
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Exam Centre Capacity</label>
+                    <input type="text" placeholder="Exam Centre Capacity" ng-model="ExamCenterCapacity" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" class="form-control" required />
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Exam Centre TypeCollege Type</label>
+                    <select class="form-control" ng-model="ExaminationCentreType"
+                            ng-options="data.ExaminationCentreTypeID as data.ExaminationCentreTypeName for data in GetExamCenterTypes" required>
+                        <option value="" selected>Choose</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Exam Centre Sequence</label>
+                    <input type="text" placeholder="Exam Centre Capacity" ng-model="ExamCenterCapacity" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" class="form-control" required />
                 </div>
                 <div class="form-group col-md-3">
                     <label>Exam Centre Type</label>
@@ -81,10 +145,7 @@
                     <label>Exam Centre Phone</label>
                     <input type="text" placeholder="Exam Centre Phone" ng-model="ExamCenterPhone" class="form-control" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required />
                 </div>
-                <div class="form-group col-md-3">
-                    <label>Exam Centre Capacity</label>
-                    <input type="text" placeholder="Exam Centre Capacity" ng-model="ExamCenterCapacity" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" class="form-control" required />
-                </div>
+
                 <div class="form-group col-md-12">
                     <button class="btn btn-info pull-right" type="submit" ng-click="ExamCenterForm.$valid && Submit()">Submit</button>
                 </div>

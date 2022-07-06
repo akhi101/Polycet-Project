@@ -1,0 +1,188 @@
+﻿<style>
+    .tableinpt {
+        width: 100%;
+        box-shadow: none;
+        border: 0;
+        pointer-events: none;
+        cursor: pointer;
+    }
+
+    .table-custom-tables-tb .table-bordered > thead > tr > th {
+        position: sticky;
+        top: 0px;
+    }
+
+    .loadingimg {
+        height: 200px;
+        width: 200px;
+    }
+
+    .card {
+        background: #fff;
+        min-height: 50px;
+        box-shadow: 0 0 0 1px #dce3ec, 0 8px 16px 0 #dce3ec;
+        position: relative;
+        margin: 0px !important;
+        margin-bottom: 40px !important;
+        transition: .5s;
+        border-radius: 0;
+        display: inline-block;
+        width: 100%;
+    }
+
+    .cl-details h2 {
+        color: #ffffff;
+        font-size: 14px;
+        font-family: 'Open Sans', sans-serif;
+        background: #5ca0d3;
+        padding: 6px 9px;
+        font-weight: 600;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+</style>
+<div ng-controller="PolycetYearController">
+    <div class="breadcrumb-header">
+        <!-- breadcrumb Open -->
+        <div class="container">
+            <section class="content-header">
+                <h5>Polycet Year</h5>
+                <ol class="breadcrumb">
+                    <li><a href="#!/Dashboard"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                    <li><a href="#!/Dashboard/ExamCenters"> Polycet Year</a></li>
+                    <!-- <li><a href="#!/Dashboard/TypeWriting/TwshExamTimeSlots">TWSH Exam Time Slots</a></li>-->
+                </ol>
+            </section>
+        </div>
+        <!-- breadcrumb Close -->
+    </div>
+    <div class="container">
+        <div class="col-md-12">
+            <button class="btn bck_btn"><a href="#!/Dashboard" class="backA"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</a></button>
+        </div>
+    </div>
+    <div class="container">
+        <div class="col-md-12" style="padding:0px!important">
+            <div class="cl-details">
+                <h2>Add Polycet Year</h2>
+            </div>
+        </div>
+        <div class="card">
+            <form name="ExamCenterForm">
+                <div class="form-group col-md-3">
+                    <label>Polycet Year</label>
+                    <input class="date-own form-control"  ng-model="PolycetYear" type="text">
+                    <!--<input type="text" placeholder="Exam Centre Name" ng-model="ExamCenter" class="form-control" required />-->
+                </div>
+                <!--<div class="form-group col-md-3">
+                    <label>Exam Centre Type</label>
+                    <select class="form-control" ng-model="ExaminationCentreType"
+                            ng-options="data.ExaminationCentreTypeID as data.ExaminationCentreTypeName for data in GetExamCenterTypes" required>
+                        <option value="" selected>Choose</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Exam Centre Phone</label>
+                    <input type="text" placeholder="Exam Centre Phone" ng-model="ExamCenterPhone" class="form-control" maxlength="10" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" required />
+                </div>
+                <div class="form-group col-md-3">
+                    <label>Exam Centre Capacity</label>
+                    <input type="text" placeholder="Exam Centre Capacity" ng-model="ExamCenterCapacity" maxlength="4" oninput="this.value = this.value.replace(/[^0-9.]/g, '').replace(/(\..*?)\..*/g, '$1');" class="form-control" required />
+                </div>-->
+                <div class="form-group col-md-3">
+                    <button class="btn btn-info pull-right" type="submit" ng-click="ExamCenterForm.$valid && Submit()">Submit</button>
+                    <button class="btn btn-danger" ng-click="setTime()">Send Bulk SMS</button>
+                </div>
+            </form>
+        </div>
+
+        <div class="col-md-12 " ng-show="Data">
+            <div class="pull-right">
+                <a class="ExportToExcel1 pointer"
+                   id="ExportToExcel1" ng-click="DownloadtoExcel()">
+                    <i class="fa fa-file-excel-o"></i>
+                    Export to Excel
+                </a>
+            </div>
+
+        </div>
+        <div class="col-md-12" style="padding:0px!important" ng-show="Data">
+            <div class="cl-details">
+                <h2>Examination Centers</h2>
+            </div>
+        </div>
+        <div class="row" ng-show="Data">
+
+            <div id="preExamReports" class="table-responsive table-custom-tables-tb col-md-12 scrollbox">
+                <table class="table table-bordered  table-striped table-rounded scrollbox-content">
+                    <thead>
+                        <tr class="cb-1">
+                            <th class="text-center" style="width: 2%;">S.No</th>
+                            <th class="" >Polycet Year</th>
+                            <th class="">Created By</th>
+                            <th class="" >Created On </th>
+                            <th class="" >Active</th>
+                            <th class="text-center">Action</th>
+                            <!-- <th class="text-center">Delete</th>-->
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr style="background-color:#fff!important;cursor:pointer" ng-repeat="data in GetPolycetYears" ng-click="openDetails(x)">
+
+                            <td class="text-center">{{$index + 1}}</td>
+                            <td class="text-center">
+                                <input autocomplete="off" disabled class="form-control tableinpt enabletable{{$index + 1}}" type="text" ng-model="data.PolycetYear" />
+                            </td>
+                            <td class="text-center">
+                                <input autocomplete="off" style="width:100%;" class="form-control tableinpt enabletable{{$index + 1}}" type="text" ng-model="data.InsertedBy" />
+                            </td>
+                         
+                            <td class="text-center"><input autocomplete="off" style="width:100%;" class="form-control tableinpt enabletable{{$index + 1}}" type="text" ng-model="data.InsertedOn|date:'dd-mm-yyyy hh:mm:ss'" /></td>
+                          
+                            <td class="text-center">
+                                <select class="form-control tableinpt enabletable{{$index + 1}}" ng-model="data.Active"
+                                        ng-options="data.Id as data.Value for data in Ativities">
+                                    <option value="" selected>Choose</option>
+                                </select>
+                                <!-- <input autocomplete="off" style="width:100%;" class="form-control tableinpt enabletable{{$index + 1}}" type="text" ng-model="data.Active" />-->
+                            </td>
+                            <td class="text-center">
+                                <button class="btn-xs btn btn-info" style="width: 70px;" ng-show="edit{{$index + 1}}" ng-click="Editsemesterdat(data,$index+1)">
+                                    Edit
+                                </button>
+                                <button class="btn-xs btn btn-primary" style="width: 70px;" ng-show="!edit{{$index + 1}}" ng-click="Updatesemesterdat(data,$index+1)">
+                                    Update
+                                </button>
+                                <button class="btn-xs btn btn-danger" style="width: 70px;" ng-show="!edit{{$index + 1}}" ng-click="Cancel(data,$index+1)">
+                                    Cancel
+                                </button>
+                            </td>
+                            <!-- <td class="text-center" style="cursor:pointer"><button ng-click="DeleteTimeSlot(data.Id)" class="btn btn-xs btn-danger"><b>Delete</b></button></td>-->
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div style="width:100%;text-align:center;">
+            <div>
+                <img src="/asset/images/loadingnew.gif" class="loadingimg" ng-show="loading" width="64" />
+            </div>
+
+        </div>
+        <div class="col-md-12">
+            <div class="nodata">
+                <img src="/asset/images/nodata.png" ng-show="nodata" width="64" />
+            </div>
+
+        </div>
+
+    </div>
+</div>
+<script>
+    $('.date-own').datepicker({
+        minViewMode: 2,
+        format: 'yyyy'
+    });
+</script>

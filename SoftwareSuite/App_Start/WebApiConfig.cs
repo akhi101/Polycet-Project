@@ -47,7 +47,6 @@ namespace SoftwareSuite
                 //    DateTime date = dateAndTime.Date;
                 //    AcademicController academicController = new AcademicController();
                 //    DayOfWeek day = CultureInfo.InvariantCulture.Calendar.GetDayOfWeek(dateAndTime);
-
                 //    if (day == DayOfWeek.Sunday)
                 //    {
                 //        academicController.GetAttendance("75",0);

@@ -249,20 +249,20 @@ namespace SoftwareSuite.Controllers.SystemAdministration
                      
 
         [HttpPost]
-        public async Task<HttpResponseMessage> GetChangePassword()
+        public async Task<HttpResponseMessage> ChangePassword()
         {
             var data = await Request.Content.ReadAsStringAsync();
             var res = data.Split(new string[] { "$$@@$$" }, StringSplitOptions.None);
             var crypt = new HbCrypt(res[3]);
             string NewPassword = crypt.AesDecrypt(res[0]).Replace("'", "''");
             string oldPassword = crypt.AesDecrypt(res[1]).Replace("'", "''");
-            int UserID = Int32.Parse(crypt.AesDecrypt(res[2]));
+            int UserLoginID = Int32.Parse(crypt.AesDecrypt(res[2]));
             var passcrypt = new HbCrypt();
             SystemUserBLL SystemUserBLL = new SystemUserBLL();
             SystemRes SystemRes = new SystemRes();
             var encOldpass = passcrypt.Encrypt(oldPassword);
             var encNewpass = passcrypt.Encrypt(NewPassword);
-            SystemRes = SystemUserBLL.GetChangePassword(UserID, encOldpass, encNewpass);
+            SystemRes = SystemUserBLL.ChangePassword(UserLoginID, encOldpass, encNewpass);
             HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK, SystemRes);
             return response;
         }

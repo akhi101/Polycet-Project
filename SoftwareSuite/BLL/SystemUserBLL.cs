@@ -195,14 +195,14 @@ namespace SoftwareSuite.BLL
                 throw ex;
             }
         }
-        public SystemRes GetChangePassword(Int32 UserId, string OldPassword, string NewPassword)
+        public SystemRes ChangePassword(Int32 UserLoginID, string OldPassword, string NewPassword)
         {
             try
             {
                 SystemUserService SystemUserService = new SystemUserService();
                 dbHandler dbHandler = new dbHandler();
                 DataTable tblUsersList = new DataTable();
-                tblUsersList = SystemUserService.GetChangePassword(dbHandler, UserId, OldPassword, NewPassword);
+                tblUsersList = SystemUserService.ChangePassword(dbHandler, UserLoginID, OldPassword, NewPassword);
                 SystemRes res = new SystemRes();
                 res.ResponceCode = Convert.ToString(tblUsersList.Rows[0]["ResponceCode"]);
                 res.ResponceDescription = Convert.ToString(tblUsersList.Rows[0]["ResponceDescription"]);

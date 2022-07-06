@@ -23,6 +23,8 @@ namespace SoftwareSuite
             Response.Headers.Remove("X-AspNetMvc-Version"); 
                 //Response.Headers.Remove("X-AspNet-Version");
         }
+
+
         protected void Application_Start()
         {
             AreaRegistration.RegisterAllAreas();

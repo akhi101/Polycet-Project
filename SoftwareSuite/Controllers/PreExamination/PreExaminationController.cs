@@ -259,6 +259,25 @@ namespace SoftwareSuite.Controllers.PreExamination
             }
         }
 
+        [HttpGet, ActionName("GetNrReport")]
+        public HttpResponseMessage GetNrReport()
+        {
+            try
+            {
+                var dbHandler = new dbHandler();
+                string StrQuery = "";
+                StrQuery = "exec SP_GET_NR_Report";
+                return Request.CreateResponse(HttpStatusCode.OK, dbHandler.ReturnDataSet(StrQuery));
+            }
+            catch (Exception ex)
+            {
+                dbHandler.SaveErorr("SP_GET_NR_Report", 0, ex.Message);
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+
+
+
         [HttpGet, ActionName("getWebsiteFeedbackReport")]
         public HttpResponseMessage getWebsiteFeedbackReport()
         {
@@ -1315,10 +1334,10 @@ namespace SoftwareSuite.Controllers.PreExamination
         }
 
         [HttpGet, ActionName("GenerateNrData")]
-        public string GenerateNrData(int ExamMonthYearId, int StudentTypeId, string Scheme, int ExamTypeId,string UserName)
+        public string GenerateNrData(int ExamMonthYearId, int StudentTypeId, string Scheme, int ExamTypeId, string UserName)
         {
             try
-            {               
+            {
                 var dbHandler = new dbHandler();
                 var param = new SqlParameter[5];
                 param[0] = new SqlParameter("@ExamMonthYearId", ExamMonthYearId);
@@ -1331,7 +1350,7 @@ namespace SoftwareSuite.Controllers.PreExamination
                 {
                     var ExamMonthYear = ds.Tables[1].Rows[0]["ExamMonthYear"].ToString();
 
-                       var filename = ExamMonthYear+'_'+Scheme +'_'+ "GenerateNrData" + ".xlsx";
+                    var filename = ExamMonthYear + '_' + Scheme + '_' + "GenerateNrData" + ".xlsx";
                     var eh = new ExcelHelper();
                     var path = ConfigurationManager.AppSettings["DownloadsFolderPath"];
                     DataSet excelds = new DataSet();
@@ -1350,11 +1369,11 @@ namespace SoftwareSuite.Controllers.PreExamination
                     p1.ResponceCode = ds.Tables[0].Rows[0]["ResponceCode"].ToString();
                     p1.ResponceDescription = ds.Tables[0].Rows[0]["ResponceDescription"].ToString();
                     p.Add(p1);
-                   
+
                     return JsonConvert.SerializeObject(p);
                     //return ;
-                   
-            }
+
+                }
                 else
                 {
                     List<person> p = new List<person>();
@@ -1375,8 +1394,30 @@ namespace SoftwareSuite.Controllers.PreExamination
             }
 
         }
+            [HttpGet, ActionName("GetPrinterNr")]
+            public string GetPrinterNr(string ExaminationCentreCode)
+            {
+                string NRReportDir = @"Reports\NR\";
+                try
+                {
+                    var dbHandler = new dbHandler();
+                    var param = new SqlParameter[1];
+                    param[0] = new SqlParameter("@ExaminationCentreCode", ExaminationCentreCode); 
+                    DataSet ds = dbHandler.ReturnDataWithStoredProcedure("SP_Get_PhotoNR", param);
+                    GenerateNR GenerateNR = new GenerateNR();
+                    var pdf = GenerateNR.GetNrPdf(ds, NRReportDir);
 
-        [HttpGet, ActionName("GetNBAReports1Excel")]
+                    return pdf;
+                }
+                catch (Exception ex)
+                {
+                    return null;
+                }
+            }
+
+
+
+            [HttpGet, ActionName("GetNBAReports1Excel")]
         public string GetNBAReports1Excel()
         {
             try
@@ -1430,8 +1471,168 @@ namespace SoftwareSuite.Controllers.PreExamination
         }
 
 
-        
-            [HttpGet, ActionName("GetNICData")]
+        [HttpGet, ActionName("GetExcelNrReport")]
+        public string GetExcelNrReport()
+        {
+            try
+            {
+                var dbHandler = new dbHandler();
+                string StrQuery = "";
+                StrQuery = "exec SP_GET_NR_Report";
+                DataSet ds = dbHandler.ReturnDataSet(StrQuery);
+                if (ds.Tables[0].Rows.Count > 0)
+                {
+                    var filename = "NR_Excel_Report" + Guid.NewGuid() + ".xlsx";
+                    var eh = new ExcelHelper();
+                    var path = ConfigurationManager.AppSettings["DownloadsFolderPath"];
+                    bool folderExists = Directory.Exists(path);
+                    if (!folderExists)
+                        Directory.CreateDirectory(path);
+                    eh.ExportDataSet(ds, path + filename);
+                    Timer timer = new Timer(60000);
+                    timer.Elapsed += (sender, e) => elapse(sender, e, ConfigurationManager.AppSettings["DownloadsFolderPath"] + filename);
+                    timer.Start();
+
+                    var file = "/Downloads/" + filename;
+                    List<person> p = new List<person>();
+                    person p1 = new person();
+                    p1.file = file;
+                    p1.ResponceCode = "200";
+                    //p1.ResponceDescription = ds.Tables[0].Rows[0]["ResponceDescription"].ToString();
+                    p.Add(p1);
+
+                    return JsonConvert.SerializeObject(p);
+                    //return ;
+
+                }
+                else
+                {
+                    List<person> p = new List<person>();
+                    person p1 = new person();
+                    p1.file = "";
+                    p1.ResponceCode = "400";
+                    p1.ResponceDescription = "Data Not Found";
+                    p.Add(p1);
+                    return JsonConvert.SerializeObject(p);
+                }
+            }
+            catch (Exception ex)
+            {
+                dbHandler.SaveErorr("SP_GET_NR_Report", 0, ex.Message);
+                return ex.Message;
+            }
+
+        }
+
+
+        [HttpGet, ActionName("GetExcelAttendanceReport")]
+        public string GetExcelAttendanceReport()
+        {
+            try
+            {
+                var dbHandler = new dbHandler();
+                string StrQuery = "";
+                StrQuery = "exec SP_GET_AttendanceReport";
+                DataSet ds = dbHandler.ReturnDataSet(StrQuery);
+                if (ds.Tables[0].Rows.Count > 0)
+                {
+                    var filename = "Attendance_Report" + Guid.NewGuid() + ".xlsx";
+                    var eh = new ExcelHelper();
+                    var path = ConfigurationManager.AppSettings["DownloadsFolderPath"];
+                    bool folderExists = Directory.Exists(path);
+                    if (!folderExists)
+                        Directory.CreateDirectory(path);
+                    eh.ExportDataSet(ds, path + filename);
+                    Timer timer = new Timer(60000);
+                    timer.Elapsed += (sender, e) => elapse(sender, e, ConfigurationManager.AppSettings["DownloadsFolderPath"] + filename);
+                    timer.Start();
+
+                    var file = "/Downloads/" + filename;
+                    List<person> p = new List<person>();
+                    person p1 = new person();
+                    p1.file = file;
+                    p1.ResponceCode = "200";
+                    //p1.ResponceDescription = ds.Tables[0].Rows[0]["ResponceDescription"].ToString();
+                    p.Add(p1);
+
+                    return JsonConvert.SerializeObject(p);
+                    //return ;
+
+                }
+                else
+                {
+                    List<person> p = new List<person>();
+                    person p1 = new person();
+                    p1.file = "";
+                    p1.ResponceCode = "400";
+                    p1.ResponceDescription = "Data Not Found";
+                    p.Add(p1);
+                    return JsonConvert.SerializeObject(p);
+                }
+            }
+            catch (Exception ex)
+            {
+                dbHandler.SaveErorr("SP_GET_AttendanceReport", 0, ex.Message);
+                return ex.Message;
+            }
+
+        }
+
+        [HttpGet, ActionName("GetDetailedExcelAttendanceReport")]
+        public string GetDetailedExcelAttendanceReport()
+        {
+            try
+            {
+                var dbHandler = new dbHandler();
+                string StrQuery = "";
+                StrQuery = "exec SP_GET_AdminAttendanceReport";
+                DataSet ds = dbHandler.ReturnDataSet(StrQuery);
+                if (ds.Tables[0].Rows.Count > 0)
+                {
+                    var filename = "Detailed_Attendance_Report" + Guid.NewGuid() + ".xlsx";
+                    var eh = new ExcelHelper();
+                    var path = ConfigurationManager.AppSettings["DownloadsFolderPath"];
+                    bool folderExists = Directory.Exists(path);
+                    if (!folderExists)
+                        Directory.CreateDirectory(path);
+                    eh.ExportDataSet(ds, path + filename);
+                    Timer timer = new Timer(60000);
+                    timer.Elapsed += (sender, e) => elapse(sender, e, ConfigurationManager.AppSettings["DownloadsFolderPath"] + filename);
+                    timer.Start();
+
+                    var file = "/Downloads/" + filename;
+                    List<person> p = new List<person>();
+                    person p1 = new person();
+                    p1.file = file;
+                    p1.ResponceCode = "200";
+                    //p1.ResponceDescription = ds.Tables[0].Rows[0]["ResponceDescription"].ToString();
+                    p.Add(p1);
+
+                    return JsonConvert.SerializeObject(p);
+                    //return ;
+
+                }
+                else
+                {
+                    List<person> p = new List<person>();
+                    person p1 = new person();
+                    p1.file = "";
+                    p1.ResponceCode = "400";
+                    p1.ResponceDescription = "Data Not Found";
+                    p.Add(p1);
+                    return JsonConvert.SerializeObject(p);
+                }
+            }
+            catch (Exception ex)
+            {
+                dbHandler.SaveErorr("SP_GET_AdminAttendanceReport", 0, ex.Message);
+                return ex.Message;
+            }
+
+        }
+
+
+        [HttpGet, ActionName("GetNICData")]
         public string GetNICData()
         {
             try
@@ -2057,9 +2258,15 @@ namespace SoftwareSuite.Controllers.PreExamination
         public string file { get; set; }
             public string ResponceCode { get; set; }
             public string ResponceDescription { get; set; }
-        }  
+        }
+        public class person1
+        {
+            public string Barcode { get; set; }
+            public string ResponseCode { get; set; }
 
-        [HttpGet, ActionName("GenerateWantings")]
+        }
+
+    [HttpGet, ActionName("GenerateWantings")]
         public string GenerateWantings(int ExamMonthYearId, int StudentTypeId, string Scheme, int ExamTypeId)
         {
             try
@@ -2228,6 +2435,25 @@ namespace SoftwareSuite.Controllers.PreExamination
             }
         }
 
+        [HttpGet, ActionName("GetAttendanceReport")]
+        public HttpResponseMessage GetAttendanceReport()
+        {
+            try
+            {
+                var dbHandler = new dbHandler();
+                string StrQuery = "";
+                StrQuery = "exec SP_GET_AttendanceReport";
+                return Request.CreateResponse(HttpStatusCode.OK, dbHandler.ReturnDataSet(StrQuery));
+            }
+            catch (Exception ex)
+            {
+                dbHandler.SaveErorr("SP_GET_AttendanceReport", 0, ex.Message);
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+
+        
+
         [HttpGet, ActionName("GetExamTypeByMonthYear")]
         public string GetExamTypeByMonthYear(int ExamMonthYearId)
         {
@@ -2249,7 +2475,28 @@ namespace SoftwareSuite.Controllers.PreExamination
         }
 
 
+        [HttpGet, ActionName("GetPolycetRankDetails")]
+        public string GetPolycetRankDetails(string HallticketNumber)
+        {
+            try
+            {
+                var dbHandler = new dbHandler();
+                var param = new SqlParameter[1];
+                param[0] = new SqlParameter("@HallticketNumber", HallticketNumber);
+                var dt = dbHandler.ReturnDataWithStoredProcedureTable("SP_Get_RankcardDetails", param);
+                return JsonConvert.SerializeObject(dt);
+            }
+            catch (Exception ex)
+            {
+
+                dbHandler.SaveErorr("SP_Get_RankcardDetails", 0, ex.Message);
+                return ex.Message;
+            }
+
+        }
         
+
+
                [HttpGet, ActionName("GetSchemeByPin")]
         public string GetSchemeByPin(string pin)
         {
@@ -2418,6 +2665,54 @@ namespace SoftwareSuite.Controllers.PreExamination
             }
         }
 
+        public DataTable GetChangePassword(dbHandler dbHandler, Int32 UserLoginID, string OldPassword, string NewPassword)
+        {
+            DataTable dt = new DataTable();
+            try
+            {
+                using (SqlConnection conn = new SqlConnection(dbHandler.GetConnectionString()))
+                {
+                    using (var cmd = new SqlCommand("SP_SET_ChangePassword", conn))
+                    {
+                        cmd.CommandType = CommandType.StoredProcedure;
+                        cmd.Parameters.Add(new SqlParameter("@UserLoginID", UserLoginID));
+                        cmd.Parameters.Add(new SqlParameter("@OldPassword", OldPassword));
+                        cmd.Parameters.Add(new SqlParameter("@NewPassword", NewPassword));
+                        conn.Open();
+                        var da = new SqlDataAdapter(cmd);
+                        da.Fill(dt);
+                        conn.Close();
+                    }
+                }
+                return dt;
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+        }
+
+
+
+        [HttpPost, ActionName("ChangePassword")]
+        public string ChangePassword([FromBody] JsonObject data)
+        {
+            try
+            {
+                var dbHandler = new dbHandler();
+                var param = new SqlParameter[3];
+                param[0] = new SqlParameter("@UserLoginID", data["UserLoginID"]);
+                param[1] = new SqlParameter("@OldPassword", data["OldPassword"]);
+                param[2] = new SqlParameter("@NewPassword", data["NewPassword"]);
+                var dt = dbHandler.ReturnDataWithStoredProcedure("SP_SET_ChangePassword", param);
+                return JsonConvert.SerializeObject(dt);
+            }
+            catch (Exception ex)
+            {
+                dbHandler.SaveErorr("SP_SET_ChangePassword", 0, ex.Message);
+                return ex.Message;
+            }
+        }
 
         [HttpPost, ActionName("UpdateExamCenters")]
         public string UpdateExamCenters([FromBody] JsonObject data)
@@ -2442,6 +2737,28 @@ namespace SoftwareSuite.Controllers.PreExamination
             catch (Exception ex)
             {
                 dbHandler.SaveErorr("SP_Update_ExaminationCentres", 0, ex.Message);
+                return ex.Message;
+            }
+        }
+
+        [HttpPost, ActionName("UpdatePolycetYear")]
+        public string UpdatePolycetYear([FromBody] JsonObject data)
+        {
+            try
+            {
+                string clientIpAddress = System.Web.HttpContext.Current.Request.UserHostAddress;
+                var dbHandler = new dbHandler();
+                var param = new SqlParameter[3];
+                param[0] = new SqlParameter("@Id", data["Id"]);
+                param[1] = new SqlParameter("@Active", data["Active"]);
+                param[2] = new SqlParameter("@UserName", data["UserName"]);
+                var dt = dbHandler.ReturnDataWithStoredProcedure("SP_Update_PolycetYear", param);
+
+                return JsonConvert.SerializeObject(dt);
+            }
+            catch (Exception ex)
+            {
+                dbHandler.SaveErorr("SP_Update_PolycetYear", 0, ex.Message);
                 return ex.Message;
             }
         }
@@ -4107,6 +4424,31 @@ namespace SoftwareSuite.Controllers.PreExamination
 
         }
 
+        [HttpPost, ActionName("SendAllSms")]
+        public async Task<HttpResponseMessage> SendAllSms([FromBody] JsonObject data)
+        {
+            try
+            {
+
+                var com = new CommunicationController();
+                var msg = "Dear Student, Pl Attend POLYCET-2022 exam on 30-06-2022 from 11 AM-Report by 10AM at Exam Center, Download HT from polycetts.nic.in, SBTET TS";
+                //var msg = "Dear Student, Pl Attend POLYCET-2022 exam on 30-06-2022 from 11 AM download HT from polycetts.nic.in, SBTET TS";
+                //var msg = "Sir / Madam, Login Credentials for polycet.sbtet.telangana.gov.in, User Name:" + data["UserName"].ToString() + ", Password:polycet2022 Pl login to Mark POLYCET attendance. SECRETARY, SBTET TS.";
+                //var msg = data["Mobile"].ToString() + " is your otp for validating your Mobile no on" + data["CandidateMobile"].ToString().Substring(0, 2) + "xxxxx" + data["CandidateMobile"].ToString().Substring(6, 4) + ", SBTET TS";
+                var test = await com.SendSms(data["Mobile"].ToString(), msg, "1007165649641705202");
+                HttpResponseMessage HttpResponse = Request.CreateResponse(HttpStatusCode.OK, "Success");
+                return HttpResponse;
+                //HttpResponseMessage HttpResponse = Request.CreateResponse(HttpStatusCode.OK, dt.Tables[0].DataTableToList<RestSharp.HttpResponse>());
+                //return HttpResponse;
+            }
+            catch (Exception ex)
+            {
+                dbHandler.SaveErorr("SP_Get_RegistrationMobileOTP", 0, ex.Message);
+                HttpResponseMessage response = Request.CreateResponse(HttpStatusCode.OK, ex.Message);
+                return response;
+            }
+        }
+
         [HttpGet, ActionName("SetSmsStatus")]
         public string SetSmsStatus(string pin,string semester)
         {
@@ -5454,6 +5796,28 @@ namespace SoftwareSuite.Controllers.PreExamination
 
         }
 
+        [HttpPost, ActionName("SetPolycetYear")]
+        public string SetPolycetYear([FromBody] JsonObject request)
+        {
+            try
+            {
+                var dbHandler = new dbHandler();
+                var param = new SqlParameter[2];
+                param[0] = new SqlParameter("@PolycetYear", request["PolycetYear"]);
+                param[1] = new SqlParameter("@UserName", request["UserName"]);
+                var dt = dbHandler.ReturnDataWithStoredProcedure("SP_Add_PolycetYear", param);
+
+                return JsonConvert.SerializeObject(dt);
+
+
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+
+        }
+
 
         [HttpPost, ActionName("BonafideSetVerifyStatus")]
         public string BonafideSetVerifyStatus([FromBody] JsonObject request)
@@ -6695,6 +7059,29 @@ namespace SoftwareSuite.Controllers.PreExamination
 
         }
 
+
+        [HttpGet, ActionName("SetSms")]
+        public string SetSms(string UserLoginName)
+        {
+            try
+            {
+                var dbHandler = new dbHandler();
+                var param = new SqlParameter[1];
+
+                param[0] = new SqlParameter("@UserLoginName", UserLoginName);
+
+                var dt = dbHandler.ReturnDataWithStoredProcedure("SP_SET_SMSStatus", param);
+                return JsonConvert.SerializeObject(dt);
+            }
+            catch (Exception ex)
+            {
+                return ex.Message;
+            }
+
+        }
+
+        
+
         [HttpGet, ActionName("GetNameCorrectionApproveList")]
         public string GetNameCorrectionApproveList(int userType)
         {
@@ -6839,24 +7226,24 @@ namespace SoftwareSuite.Controllers.PreExamination
         //}
 
 
-        [HttpGet, ActionName("getAttendanceReport")]
-        public string getAttendanceReport(string Pin)
-        {
-            try
-            {
+        //[HttpGet, ActionName("getAttendanceReport")]
+        //public string getAttendanceReport(string Pin)
+        //{
+        //    try
+        //    {
 
-                var dbHandler = new dbHandler();
-                var param = new SqlParameter[1];
-                param[0] = new SqlParameter("@Pin", Pin);
-                var dt = dbHandler.ReturnDataWithStoredProcedure("USP_Attendance_GET_PercentageByPin", param);
-                return JsonConvert.SerializeObject(dt);
-            }
-            catch (Exception ex)
-            {
-                return ex.Message;
-            }
+        //        var dbHandler = new dbHandler();
+        //        var param = new SqlParameter[1];
+        //        param[0] = new SqlParameter("@Pin", Pin);
+        //        var dt = dbHandler.ReturnDataWithStoredProcedure("USP_Attendance_GET_PercentageByPin", param);
+        //        return JsonConvert.SerializeObject(dt);
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        return ex.Message;
+        //    }
 
-        }
+        //}
 
 
         [HttpGet, ActionName("getCertificateDetailsForApproval")]
@@ -10116,6 +10503,52 @@ namespace SoftwareSuite.Controllers.PreExamination
             }
         }
 
+        [HttpGet, ActionName("ViewOmrDetails")]
+        public string ViewOmrDetails(string HallticketNumber)
+        {
+            try
+            {
+                var dir = AppDomain.CurrentDomain.BaseDirectory + @"omrsheets\";
+                var dbHandler = new dbHandler();
+                var param = new SqlParameter[1];
+                param[0] = new SqlParameter("@HallticketNumber",HallticketNumber);
+                var dt = dbHandler.ReturnDataWithStoredProcedure("SP_Get_OMR", param);
+                string BARCODE = "";
+                string ResponseCode = "";
+                List<person1> p = new List<person1>();
+                person1 p1 = new person1();
+                if (dt.Tables[0].Rows.Count > 0)
+                {
+                    ResponseCode = "200";
+                    BARCODE = dt.Tables[0].Rows[0]["BARCODE"].ToString();
+
+                }
+                else
+                {
+                    ResponseCode = "400";
+                    BARCODE = "";
+                }
+                //var barcode = BARCODE;
+                
+          
+
+                p1.Barcode = BARCODE.ToString();
+                p1.ResponseCode = ResponseCode.ToString();
+                p.Add(p1);
+
+                return JsonConvert.SerializeObject(p);
+                //return "{\"status\":\"200\",\"barcode\" : \"" + barcode + "\"}";
+              
+            }
+            catch (Exception ex)
+            {
+                dbHandler.SaveErorr("SP_Get_OMR", 0, ex.Message);
+                return ex.Message;
+            }
+        }
+
+        
+
         [HttpPost, ActionName("setBackLogData")]
         public string setBackLogData([FromBody] JsonObject request)
         {
@@ -10243,6 +10676,48 @@ namespace SoftwareSuite.Controllers.PreExamination
             {
                 dbHandler.SaveErorr("USP_GET_ExamTypes_ExamCentres", 0, ex.Message);
                 return ex.Message;
+            }
+        }
+
+        [HttpGet, ActionName("GetPolycetYears")]
+        public string GetPolycetYears()
+        {
+            try
+            {
+                var dbHandler = new dbHandler();
+                string StrQuery = "";
+                StrQuery = "exec SP_Get_PolycetYears";
+                var dt = dbHandler.ReturnDataSet(StrQuery);
+                return JsonConvert.SerializeObject(dt);
+            }
+            catch (Exception ex)
+            {
+                dbHandler.SaveErorr("SP_Get_PolycetYears", 0, ex.Message);
+                return ex.Message;
+            }
+        }
+
+    
+
+        [HttpGet, ActionName("GetAttendanceList")]
+        public HttpResponseMessage GetAttendanceList(string ExaminationCentreCode)
+        {
+            try
+            {
+
+                var dbHandler = new dbHandler();
+                var param = new SqlParameter[1];
+                param[0] = new SqlParameter("@ExaminationCentreCode", ExaminationCentreCode);
+                var dt = dbHandler.ReturnDataWithStoredProcedure("SP_Get_ExamAttendance", param);
+
+                return Request.CreateResponse(HttpStatusCode.OK, dt);
+
+            }
+            catch (Exception ex)
+            {
+
+                dbHandler.SaveErorr("SP_Get_ExamAttendance", 0, ex.Message);
+                return Request.CreateResponse(HttpStatusCode.OK, ex.Message);
             }
         }
 
@@ -10695,6 +11170,35 @@ namespace SoftwareSuite.Controllers.PreExamination
 
         }
 
+        
+            [HttpPost, ActionName("SetAttendanceList")]
+        public HttpResponseMessage SetAttendanceList([FromBody] JsonObject request)
+        {
+            try
+            {
+                //var ToUpdateMarksListData = new List<PinsList>();
+                //int size = PinDetails.Count;
+                //for (int i = 0; i < size; i++)
+                //{
+                //    ToUpdateMarksListData.Add(PinDetails[i]);
+                //}
+                //var json = new JavaScriptSerializer().Serialize(ToUpdateMarksListData);
+                var dbHandler = new dbHandler();
+                var param = new SqlParameter[3];
+                param[0] = new SqlParameter("@Json", request["Json"].ToString());
+                param[1] = new SqlParameter("@ExaminationCentreCode", request["ExaminationCentreCode"].ToString());
+                param[2] = new SqlParameter("@UserLoginName", request["UserLoginName"].ToString());
+                var res = dbHandler.ReturnDataWithStoredProcedureTable("SP_SET_ExamAttendance", param);
+                return Request.CreateResponse(HttpStatusCode.OK, res);
+            }
+            catch (Exception ex)
+            {
+
+                dbHandler.SaveErorr("SP_SET_ExamAttendance", 0, ex.Message);
+                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+            }
+        }
+
         [HttpPost, ActionName("SetPinsData")]
         public HttpResponseMessage SetPinsData([FromBody] JsonObject request)
         {
@@ -10881,21 +11385,41 @@ namespace SoftwareSuite.Controllers.PreExamination
             }
         }
 
-        [HttpGet, ActionName("getAllSemester")]
-        public HttpResponseMessage getAllSemester()
+        [HttpGet, ActionName("GetUsers")]
+        public string GetUsers()
         {
             try
             {
                 var dbHandler = new dbHandler();
                 string StrQuery = "";
-                StrQuery = "exec USP_GET_All_SEMESTER";
-                return Request.CreateResponse(HttpStatusCode.OK, dbHandler.ReturnDataSet(StrQuery));
+                StrQuery = "exec SP_Get_LoginSMS";
+
+                var dt = dbHandler.ReturnDataSet(StrQuery);
+                return JsonConvert.SerializeObject(dt);
+                //return JsonConvert.SerializeObject(dt);
+                //return Request.CreateResponse(HttpStatusCode.OK, dbHandler.ReturnDataSet(StrQuery));
+                //string Mobile = "";
+
+                //for (int i = 0; i < dt.Tables[0].Rows.Count; i++)
+                //{
+                //    //var Mobile = 9553463016;
+                //    Mobile= dt.Tables[0].Rows[i]["UserLoginMobile"].ToString();
+                //    //Mobile = dt.Tables[0].Rows[i].UserLoginMobile.Tostring();
+                //    var com = new CommunicationController();
+                //    var msg = "Dear Student, Pl Attend POLYCET-2022 exam on 30-06-2022 from 11 AM-Report by 10AM at Exam Center, Download HT from polycetts.nic.in, SBTET TS";
+                //    //var msg = "Dear Student, Pl Attend POLYCET-2022 exam on 30-06-2022 from 11 AM download HT from polycetts.nic.in, SBTET TS";
+                //    //var msg = "Sir / Madam, Login Credentials for polycet.sbtet.telangana.gov.in, User Name:" + data["UserName"].ToString() + ", Password:polycet2022 Pl login to Mark POLYCET attendance. SECRETARY, SBTET TS.";
+                //    //var msg = data["Mobile"].ToString() + " is your otp for validating your Mobile no on" + data["CandidateMobile"].ToString().Substring(0, 2) + "xxxxx" + data["CandidateMobile"].ToString().Substring(6, 4) + ", SBTET TS";
+                //    var test =  com.SendSms(Mobile.ToString(), msg, "1007165649641705202");
+                //    //return test;
+                //}
+                //return "success";
             }
             catch (Exception ex)
             {
 
-                dbHandler.SaveErorr(" USP_GET_All_SEMESTER", 0, ex.Message);
-                return Request.CreateResponse(HttpStatusCode.InternalServerError, ex.Message);
+                dbHandler.SaveErorr("ADM_SFP_GET_StudentDetailsByPin", 0, ex.Message);
+                return ex.Message;
             }
         }
 

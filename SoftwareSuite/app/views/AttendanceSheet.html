@@ -1,0 +1,144 @@
+﻿<style>
+    input.my_radio {
+        margin: 10px;
+    }
+    .loadingimg{
+        height:200px;
+        width:200px;
+    }
+    .NoDataImg {
+        height: 300px;
+        width: 300px;
+    }
+    .loading-container {
+        position: relative;
+        width: 8px;
+        height: 8px;
+        margin: auto;
+    }
+
+        .loading-container .item {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            border: 3px solid #fff;
+            border-radius: 50%;
+            border-top-color: transparent;
+            border-bottom-color: transparent;
+            animation: spin 2s ease infinite;
+           /* background-color:#ddd;*/
+           /* padding:1px;*/
+        }
+
+            .loading-container .item:nth-child(1) {
+                width: 15px;
+                height: 15px;
+            }
+
+            .loading-container .item:nth-child(2) {
+                width: 22px;
+                height: 22px;
+                animation-delay: 0.1s;
+            }
+
+            .loading-container .item:nth-child(3) {
+                width: 30px;
+                height: 30px;
+                animation-delay: 0.2s;
+            }
+
+            /*.loading-container .item:nth-child(4) {
+                width: 30px;
+                height: 30px;
+                animation-delay: 0.3s;
+            }
+*/
+    @keyframes spin {
+        50% {
+            transform: translate(-50%, -50%) rotate(180deg);
+        }
+
+        100% {
+            transform: translate(-50%, -50%) rotate(0deg);
+        }
+    }
+</style>
+<div ng-controller="AttendanceSheetController">
+    <div class="sm-spacer"></div>
+    <div class="container">
+        <div class="col-md-12">
+            <button class="btn bck_btn"><a href="#!/Dashboard/ExamCentersList" class="backA"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</a></button>
+        </div>
+    </div>
+    <div class="container">
+        
+        <div class="card" ng-show="Data">
+            <div class="col-md-12" style="padding:0px!important">
+                <div class="cl-details">
+                    <h2>Attendance Sheet</h2>
+                </div>
+            </div>
+            <div class="row">
+
+                <div id="preExamReports" class="table-responsive table-custom-tables-tb col-md-12 scrollbox">
+                    <table class="table table-bordered  table-striped table-rounded scrollbox-content">
+                        <thead>
+                            <tr class="cb-1">
+                                <th class="text-center" style="width: 2%;">S.No</th>
+                                <th class="">Hall Ticket</th>
+                                <th class="">Name</th>
+                                <th class="text-center">Attendance</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+
+                            <tr style="background-color:#fff!important;cursor:pointer" ng-repeat="data in AttendanceLists" ng-click="openDetails(x)">
+                                <td class="text-center">{{$index + 1}}</td>
+                                <td>{{data.HallTicketNo}}</td>
+                                <td>{{data.StudentName}}</td>
+                                <td class="text-center">
+                                    <select class="form-control" ng-model="data.Attendance"
+                                            ng-options="data.Value as data.Name for data in AttendanceValues" ng-change="RadioChange(data)">
+
+                                       <!-- <option value="" selected>Choose</option>-->
+                                    </select>
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <button class="btn btn-info btn-sm pull-right" ng-show="!btnLoading" ng-click="OpenReport()" style="margin: 0px 15px;">
+                    <span ng-show="!btnLoading">View Report</span>
+                   
+                </button>
+                <button class="btn btn-info btn-sm pull-right" ng-show="btnLoading"  title="Loading" style="margin: 0px 15px;padding:10px;">
+                    
+                    <div class="loading-container" >
+                        <div class="item"></div>
+                        <div class="item"></div>
+                        <!-- <div class="item"></div>-->
+                        <!--<div class="item"></div>-->
+                    </div>
+                </button>
+                <button class="btn btn-success btn-sm pull-right" ng-click="OpenPopup()" style="margin: 0px 15px;">Submit</button>
+
+            </div>
+        </div>
+        <div style="width:100%;text-align:center;">
+            <div>
+                <img src="/asset/images/loadingnew.gif" class="loadingimg" ng-show="loading" width="64" />
+            </div>
+
+        </div>
+        <div class="col-md-12">
+            <div class="nodata" style="text-align:center;">
+                <img src="/asset/images/nodata.png" class="NoDataImg" ng-show="nodata" width="64" />
+            </div>
+
+        </div>
+    </div>
+</div>

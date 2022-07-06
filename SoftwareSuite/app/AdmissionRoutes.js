@@ -592,6 +592,72 @@
                 dependencies: ['controllers/ExamCentersController', 'services/PreExamination/PreExaminationService']
             },
             
+            'Dashboard.ExamCentersList': {
+                url: "/ExamCentersList",
+                templateUrl: 'app/views/ExamCentersList.html',
+                dependencies: ['controllers/ExamCentersListController', 'services/PreExamination/PreExaminationService']
+            },
+
+            'Dashboard.PolycetYear': {
+                url: "/PolycetYear",
+                templateUrl: 'app/views/PolycetYear.html',
+                dependencies: ['controllers/PolycetYearController', 'services/PreExamination/PreExaminationService']
+            },
+            'Dashboard.AttendanceSheet': {
+                url: "/ExamCentersList/AttendanceSheet",
+                templateUrl: 'app/views/AttendanceSheet.html',
+                dependencies: ['controllers/AttendanceSheetController', 'services/PreExamination/PreExaminationService']
+            },
+
+            'index.RankCardDownload': {
+                url: "/RankCardDownload",
+                templateUrl: 'app/views/RankCardDownload.html',
+                dependencies: ['controllers/RankCardDownloadController', 'services/PreExamination/PreExaminationService']
+            },
+
+            'index.ViewOmr': {
+                url: "/ViewOmr",
+                templateUrl: 'app/views/ViewOmr.html',
+                dependencies: ['controllers/ViewOmrController', 'services/PreExamination/PreExaminationService']
+            },
+            
+
+            'Dashboard.AttendanceReport': {
+                url: "/AttendanceReport",
+                templateUrl: 'app/views/AttendanceReport.html',
+                dependencies: ['controllers/AttendanceReportController', 'services/PreExamination/PreExaminationService']
+            },
+
+            'Dashboard.NrDownload': {
+                url: "/NrDownload",
+                templateUrl: 'app/views/NrDownload.html',
+                dependencies: ['controllers/NrDownloadController', 'services/PreExamination/PreExaminationService']
+            },
+            'Dashboard.NrReport': {
+                url: "/NrReport",
+                templateUrl: 'app/views/NrReport.html',
+                dependencies: ['controllers/NrReportController', 'services/PreExamination/PreExaminationService']
+            },
+
+            'Dashboard.LatestNews': {
+                url: "/LatestNews",
+                templateUrl: 'app/views/LatestNews.html',
+                dependencies: ['controllers/LatestNewsController', 'services/PreExamination/PreExaminationService']
+            },
+
+
+            'Dashboard.ResultsProcessing': {
+                url: "/ResultsProcessing",
+                templateUrl: 'app/views/ResultsProcessing.html',
+                dependencies: ['controllers/ResultsProcessingController', 'services/PreExamination/PreExaminationService', 'directives/saFileUpload']
+            },
+            
+            'Dashboard.ChangePassword': {
+                url: "/ChangePassword",
+                templateUrl: 'app/views/ChangePassword.html',
+                dependencies: ['controllers/ChangePasswordController', 'services/PreExamination/PreExaminationService']
+            },
+            
             'Dashboard.AdmissionDashboard.SetSemisterDates': {
                 url: "/SetSemisterDates",
                 templateUrl: 'app/views/Admission/SetSemisterDates.html',

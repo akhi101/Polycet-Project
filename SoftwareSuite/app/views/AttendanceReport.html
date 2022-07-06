@@ -1,0 +1,120 @@
+﻿<style>
+    .cls_red {
+        color: red;
+        font-weight: bold;
+    }
+
+    td.text-center.ng-binding.clr-green {
+        color: forestgreen !important;
+        font-weight: bold;
+    }
+
+    td.ng-binding.clr-green {
+        color: forestgreen !important;
+        font-weight: bold;
+    }
+
+    .clr-green {
+        color: forestgreen !important;
+        font-weight: bold;
+    }
+    .ExportToExcel1{
+        padding :0px 10px;
+    }
+</style>
+<div ng-controller="AttendanceReportController">
+    <div class="container">
+        <div class="sm-spacer"></div>
+        <div class="container">
+            <div class="col-md-12">
+                <button class="btn bck_btn"><a href="#!/Dashboard" class="backA"><i class="fa fa-chevron-circle-left" aria-hidden="true"></i>  Back</a></button>
+            </div>
+        </div>
+        <div class="col-md-12 " ng-show="Data">
+            <div class="pull-right">
+                <a class="ExportToExcel1 pointer"
+                   id="ExportToExcel1" ng-click="DownloadtoExcel()">
+                    <i class="fa fa-file-excel-o"></i>
+                    Export to Excel
+                </a>
+            </div>
+            <div class="pull-right">
+                <a class="ExportToExcel1 pointer"
+                   id="ExportToExcel1" ng-click="DownloadDetailedExcel()">
+                    <i class="fa fa-file-excel-o"></i>
+                    Detailed Excel
+                </a>
+            </div>
+        </div>
+        <div class="col-md-12 " ng-show="Data">
+            <div class="pull-right cls_red">
+                Click on the row to mark attendance
+            </div>
+
+        </div>
+        <div class="col-md-12" style="padding:0px!important" ng-show="Data">
+            <div class="cl-details">
+                <h2>Attendance Report</h2>
+            </div>
+        </div>
+        <div class="row" ng-show="Data">
+
+            <div id="preExamReports" class="table-responsive table-custom-tables-tb col-md-12 scrollbox">
+                <table class="table table-bordered  table-striped table-rounded scrollbox-content">
+                    <thead>
+                        <tr class="cb-1">
+                            <th class="text-center" style="width: 2%;">S.No</th>
+                            <th class="text-center" style="width: 10%;">Exam Centre Code</th>
+                            <th>Exam Centre Name</th>
+                            <th class="text-center">No of Students Present</th>
+                            <th class="text-center">No of Students Absent</th>
+                            <th class="text-center">Malpractice</th>
+                            <th class="text-center">Total Students</th>
+                            <th class="text-center">Updated On</th>
+                            <th class="text-center">Updated By </th>
+
+                        </tr>
+                    </thead>
+
+                    <tbody>
+                        <tr style="background-color:#fff!important;cursor:pointer" ng-repeat="data in AttendanceLists" ng-click="openDetails(data)">
+
+                            <td class="text-center" ng-class="{'clr-green': data.IsUpdated==1}">{{$index + 1}}</td>
+                            <td class="text-center" ng-class="{'clr-green': data.IsUpdated==1}">
+                                {{data.ExaminationCentreCode}}
+                            </td>
+                            <td ng-class="{'clr-green': data.IsUpdated==1}">
+                                {{data.ExaminationCentreName}}
+                            </td>
+                            <td class="text-center" ng-class="{'clr-green': data.IsUpdated==1}">{{data.Present}}</td>
+                            <td class="text-center" ng-class="{'clr-green': data.IsUpdated==1}">{{data.Absent}}</td>
+                            <td class="text-center" ng-class="{'clr-green': data.IsUpdated==1}">{{data.Malpractice}}</td>
+                            <td class="text-center" ng-class="{'clr-green': data.IsUpdated==1}">{{data.Total}}</td>
+                            <td class="text-center" ng-class="{'clr-green': data.IsUpdated==1}">{{data.UpdatedOn== null ? '-' : data.UpdatedOn}}</td>
+                            <td class="text-center" ng-class="{'clr-green': data.IsUpdated==1}">{{data.UpdatedBy == null ? '-' : data.UpdatedBy }}</td>
+
+                            <!--<td class="text-center">
+        <i style="color: #337ab7;" title="Download" class="fa fa-download" aria-hidden="true"></i>
+    </td>-->
+                            <!-- <td class="text-center" style="cursor:pointer"><button ng-click="DeleteTimeSlot(data.Id)" class="btn btn-xs btn-danger"><b>Delete</b></button></td>-->
+                        </tr>
+
+                    </tbody>
+                </table>
+            </div>
+
+        </div>
+        <div style="width:100%;text-align:center;">
+            <div>
+                <img src="/asset/images/loadingnew.gif" class="loadingimg" ng-show="loading" width="64" />
+            </div>
+
+        </div>
+        <div class="col-md-12">
+            <div class="nodata">
+                <img src="/asset/images/nodata.png" ng-show="nodata" width="64" />
+            </div>
+
+        </div>
+    </div>
+</div>
